@@ -1,0 +1,1064 @@
+﻿[
+  {
+    "dec": "002",
+    "hex": "Ox0002",
+    "description": "Grid overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "003",
+    "hex": "Ox0003",
+    "description": "Grid transient overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "004",
+    "hex": "Ox0004",
+    "description": "Grid undervoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "005",
+    "hex": "Ox0005",
+    "description": "Grid low voltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "007",
+    "hex": "Ox0007",
+    "description": "AC instantaneous  overcurrent",
+    "classification": "Fault"
+  },
+  {
+    "dec": "008",
+    "hex": "Ox0008",
+    "description": "Grid over frequency",
+    "classification": "Fault"
+  },
+  {
+    "dec": "009",
+    "hex": "Ox0009",
+    "description": "Grid underfrequency",
+    "classification": "Fault"
+  },
+  {
+    "dec": "010",
+    "hex": "OxOOOA",
+    "description": "Grid power outage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "011",
+    "hex": "OxOOOB",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "012",
+    "hex": "OxOOOC",
+    "description": "Excessive leakage current",
+    "classification": "Fault"
+  },
+  {
+    "dec": "013",
+    "hex": "OxOOOD",
+    "description": "Grid abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "014",
+    "hex": "OxOOOE",
+    "description": "10-minute grid overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "015",
+    "hex": "OxOOOF",
+    "description": "Grid high voltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "016",
+    "hex": "OxOOIO",
+    "description": "Output overload",
+    "classification": "Fault"
+  },
+  {
+    "dec": "017",
+    "hex": "OxOOI I",
+    "description": "Grid voltage unbalance",
+    "classification": "Fault"
+  },
+  {
+    "dec": "019",
+    "hex": "Ox0013",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "020",
+    "hex": "Ox0014",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "021",
+    "hex": "Ox0015",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "022",
+    "hex": "Ox0016",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "023",
+    "hex": "Ox0017",
+    "description": "PV connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "024",
+    "hex": "Ox0018",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "025",
+    "hex": "Ox0019",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "030",
+    "hex": "OxOOIE",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "031",
+    "hex": "OxOO IF",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "032",
+    "hex": "Ox0020",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "033",
+    "hex": "Ox0021",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "034",
+    "hex": "Ox0022",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "036",
+    "hex": "Ox0024",
+    "description": "Excessively high module temperature",
+    "classification": "Fault"
+  },
+  {
+    "dec": "037",
+    "hex": "Ox0025",
+    "description": "Excessively high ambient temperature",
+    "classification": "Fault"
+  },
+  {
+    "dec": "038",
+    "hex": "Ox0026",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "039",
+    "hex": "Ox0027",
+    "description": "Low system insulation resistance",
+    "classification": "Fault"
+  },
+  {
+    "dec": "040",
+    "hex": "Ox0028",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "041",
+    "hex": "Ox0029",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "042",
+    "hex": "Ox002A",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "043",
+    "hex": "Ox002B",
+    "description": "Low ambient temperature",
+    "classification": "Fault"
+  },
+  {
+    "dec": "044",
+    "hex": "Ox002C",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "045",
+    "hex": "Ox002D",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "046",
+    "hex": "Ox002E",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "047",
+    "hex": "Ox002F",
+    "description": "PV input configuration abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "048",
+    "hex": "Ox0030",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "049",
+    "hex": "Ox0031",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "050",
+    "hex": "Ox0032",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "053",
+    "hex": "Ox0035",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "054",
+    "hex": "Ox0036",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "055",
+    "hex": "Ox0037",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "056",
+    "hex": "Ox0038",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "059",
+    "hex": "Ox003B",
+    "description": "Device abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "060",
+    "hex": "Ox003C",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "070",
+    "hex": "Ox0046",
+    "description": "Fan alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "071",
+    "hex": "Ox0047",
+    "description": "AC-side SPD alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "072",
+    "hex": "Ox0048",
+    "description": "DC-side SPD alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "074",
+    "hex": "Ox004A",
+    "description": "Communication alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "076",
+    "hex": "Ox004C",
+    "description": "Device abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "078",
+    "hex": "Ox004E",
+    "description": "PVI abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "079",
+    "hex": "Ox004F",
+    "description": "PV2 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "080",
+    "hex": "Ox0050",
+    "description": "PV3 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "081",
+    "hex": "Ox0051",
+    "description": "PV4 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "087",
+    "hex": "Ox0057",
+    "description": "Electric arc detection module\r\nabnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "088",
+    "hex": "Ox0058",
+    "description": "Electric arc fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "089",
+    "hex": "Ox0059",
+    "description": "Electric arc detection disabled",
+    "classification": "Fault"
+  },
+  {
+    "dec": "105",
+    "hex": "Ox0069",
+    "description": "Grid-side protection self-check failure",
+    "classification": "Fault"
+  },
+  {
+    "dec": "106",
+    "hex": "Ox006A",
+    "description": "Grounding cable fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "116",
+    "hex": "Ox0074",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "117",
+    "hex": "Ox0075",
+    "description": "Device abnormal",
+    "classification": "Fault"
+  },
+  {
+    "dec": "220",
+    "hex": "OxOODC",
+    "description": "PV5 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "221",
+    "hex": "OxOODD",
+    "description": "PV6 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "222",
+    "hex": "OxOODE",
+    "description": "PV7 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "223",
+    "hex": "OxOODF",
+    "description": "PV8 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "224",
+    "hex": "OxOOEO",
+    "description": "PV9 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "225",
+    "hex": "OxOOEI",
+    "description": "PVIO abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "226",
+    "hex": "OxOOE2",
+    "description": "PV 11 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "227",
+    "hex": "OxOOE3",
+    "description": "PVl2 abnormal",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "514",
+    "hex": "Ox0202",
+    "description": "Meter communication abnormal\r\nalarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "532",
+    "hex": "Ox0214",
+    "description": "String I reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "533",
+    "hex": "Ox0215",
+    "description": "String 2 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "534",
+    "hex": "Ox0216",
+    "description": "String 3 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "535",
+    "hex": "Ox0217",
+    "description": "String 4 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "536",
+    "hex": "Ox0218",
+    "description": "String 5 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "537",
+    "hex": "Ox0219",
+    "description": "String 6 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "538",
+    "hex": "Ox021A",
+    "description": "String 7 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "539",
+    "hex": "Ox021B",
+    "description": "String 8 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "540",
+    "hex": "Ox021C",
+    "description": "String 9 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "541",
+    "hex": "Ox021D",
+    "description": "String 10 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "542",
+    "hex": "Ox021E",
+    "description": "String 11 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "543",
+    "hex": "Ox021F",
+    "description": "String 12 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "544",
+    "hex": "Ox0220",
+    "description": "String 13 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "545",
+    "hex": "Ox0221",
+    "description": "String 14 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "546",
+    "hex": "Ox0222",
+    "description": "String 15 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "547",
+    "hex": "Ox0223",
+    "description": "String 16 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "564",
+    "hex": "Ox0234",
+    "description": "String 17 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "565",
+    "hex": "Ox0235",
+    "description": "String 18 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "566",
+    "hex": "Ox0236",
+    "description": "String 19 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "567",
+    "hex": "Ox0237",
+    "description": "String 20 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "568",
+    "hex": "Ox0238",
+    "description": "String 21 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "569",
+    "hex": "Ox0239",
+    "description": "String 22 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "570",
+    "hex": "Ox023A",
+    "description": "String 23 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "571",
+    "hex": "Ox023B",
+    "description": "String 24 reverse connection alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "548",
+    "hex": "Ox0224",
+    "description": "String 1 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "549",
+    "hex": "Ox0225",
+    "description": "String 2 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "550",
+    "hex": "Ox0226",
+    "description": "String 3 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "551",
+    "hex": "Ox0227",
+    "description": "String 4 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "552",
+    "hex": "Ox0228",
+    "description": "String 5 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "553",
+    "hex": "Ox0229",
+    "description": "String 6 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "554",
+    "hex": "Ox022A",
+    "description": "String 7 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "555",
+    "hex": "Ox022B",
+    "description": "String 8 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "556",
+    "hex": "Ox022C",
+    "description": "String 9 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "557",
+    "hex": "Ox022D",
+    "description": "String 10 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "558",
+    "hex": "Ox022E",
+    "description": "String 11 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "559",
+    "hex": "Ox022F",
+    "description": "String 12 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "560",
+    "hex": "Ox0230",
+    "description": "String 13 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "561",
+    "hex": "Ox0231",
+    "description": "String 14 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "562",
+    "hex": "Ox0232",
+    "description": "String 15 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "563",
+    "hex": "Ox0233",
+    "description": "String 16 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "580",
+    "hex": "Ox0244",
+    "description": "String 17 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "581",
+    "hex": "Ox0245",
+    "description": "String 18 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "582",
+    "hex": "Ox0246",
+    "description": "String 19 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "583",
+    "hex": "Ox0247",
+    "description": "String 20 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "584",
+    "hex": "Ox0248",
+    "description": "String 21 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "585",
+    "hex": "Ox0249",
+    "description": "String 22 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "586",
+    "hex": "Ox024A",
+    "description": "String 23 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "587",
+    "hex": "Ox024B",
+    "description": "String 24 abnormal alarm",
+    "classification": "Alarm"
+  },
+  {
+    "dec": "448",
+    "hex": "OxOlCO",
+    "description": "String 1 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "449",
+    "hex": "OxOlCl",
+    "description": "String 2 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "450",
+    "hex": "Ox01C2",
+    "description": "String 3 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "451",
+    "hex": "Ox01C3",
+    "description": "String 4 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "452",
+    "hex": "Ox01C4",
+    "description": "String 5 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "453",
+    "hex": "Ox01C5",
+    "description": "String 6 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "454",
+    "hex": "Ox01C6",
+    "description": "String 7 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "455",
+    "hex": "Ox01C7",
+    "description": "String 8 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "456",
+    "hex": "Ox01C8",
+    "description": "String 9 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "457",
+    "hex": "Ox01C9",
+    "description": "String 10 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "458",
+    "hex": "OxOlCA",
+    "description": "String 11 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "459",
+    "hex": "OxOlCB",
+    "description": "String 12 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "460",
+    "hex": "OxOlCC",
+    "description": "String 13 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "461",
+    "hex": "OxOlCD",
+    "description": "String 14 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "462",
+    "hex": "OxOlCE",
+    "description": "String 15 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "463",
+    "hex": "OxOlCF",
+    "description": "String 16 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "464",
+    "hex": "OxOlDO",
+    "description": "String 17 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "465",
+    "hex": "OxOlDl",
+    "description": "String 18 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "466",
+    "hex": "Ox01D2",
+    "description": "String 19 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "467",
+    "hex": "Ox01D3",
+    "description": "String 20 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "468",
+    "hex": "Ox01D4",
+    "description": "String 21 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "469",
+    "hex": "Ox01D5",
+    "description": "String 22 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "470",
+    "hex": "Ox01D6",
+    "description": "String 23 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "471",
+    "hex": "Ox01D7",
+    "description": "String 24 reverse connection fault",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1500",
+    "hex": "Ox05DC",
+    "description": "PVl overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1501",
+    "hex": "Ox05DD",
+    "description": "PV2 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1502",
+    "hex": "Ox05DE",
+    "description": "PV3 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1503",
+    "hex": "Ox05DF",
+    "description": "PV4 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1504",
+    "hex": "Ox05EO",
+    "description": "PV5 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1505",
+    "hex": "Ox05El",
+    "description": "PV6 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1506",
+    "hex": "Ox05E2",
+    "description": "PV7 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1507",
+    "hex": "Ox05E3",
+    "description": "PV8 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1508",
+    "hex": "Ox05E4",
+    "description": "PV9 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1509",
+    "hex": "Ox05E5",
+    "description": "PVlO overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1510",
+    "hex": "Ox05E6",
+    "description": "PVll overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1511",
+    "hex": "Ox05E7",
+    "description": "PV12 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1512",
+    "hex": "Ox05E8",
+    "description": "PV13 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1513",
+    "hex": "Ox05E9",
+    "description": "PV14 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1514",
+    "hex": "Ox05EA",
+    "description": "PV15 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1515",
+    "hex": "Ox05EB",
+    "description": "PV16 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1516",
+    "hex": "Ox05EC",
+    "description": "PVl 7 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1517",
+    "hex": "Ox05ED",
+    "description": "PV18 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1518",
+    "hex": "Ox05EE",
+    "description": "PV19 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1519",
+    "hex": "Ox05EF",
+    "description": "PV20 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1520",
+    "hex": "Ox05FO",
+    "description": "PV21 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1521",
+    "hex": "Ox05Fl",
+    "description": "PV22 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1522",
+    "hex": "Ox05F2",
+    "description": "PV23 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1523",
+    "hex": "Ox05F3",
+    "description": "PV24 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1524",
+    "hex": "Ox05F4",
+    "description": "PV25 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1525",
+    "hex": "Ox05F5",
+    "description": "PV26 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1526",
+    "hex": "Ox05F6",
+    "description": "PV27 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1527",
+    "hex": "Ox05F7",
+    "description": "PV28 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1528",
+    "hex": "Ox05F8",
+    "description": "PV29 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1529",
+    "hex": "Ox05F9",
+    "description": "PV30 overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1530",
+    "hex": "Ox05FA",
+    "description": "PV3 I overvoltage",
+    "classification": "Fault"
+  },
+  {
+    "dec": "1531",
+    "hex": "Ox05FB",
+    "description": "PV32 overvoltage",
+    "classification": "Fault"
+  }
+]

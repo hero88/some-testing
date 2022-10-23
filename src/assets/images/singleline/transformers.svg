@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="51px" viewBox="0 0 28 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>transformers</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-line-update" transform="translate(-1094.000000, -377.000000)">
+            <g id="Group" transform="translate(1093.000000, 375.000000)">
+                <path d="M15.9151657,8.00819781 L22.0619045,19.5333331 L8.89032131,19.5333331 L15.9151657,8.00819781 Z" id="Path-3" stroke="#F4792C"></path>
+                <path d="M8.72652589,33 L15.247,40.839 L15.517,40.839 L21.2000241,33.0242509 L21.9642855,33.5775959 L15.972,41.82 L15.9727089,46.9642855 L14.9727089,46.9642855 L14.972,41.984 L8,33.6018468 L8.72652589,33 Z" id="Combined-Shape" fill="#F4792C" fill-rule="nonzero"></path>
+                <circle id="Oval" stroke="#F4792C" stroke-width="1.5" cx="15" cy="16" r="13.25"></circle>
+                <circle id="Oval-Copy" stroke="#F4792C" stroke-width="1.5" cx="15" cy="39" r="13.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

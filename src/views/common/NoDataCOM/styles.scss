@@ -1,0 +1,15 @@
+@import '@src/@core/scss/base/bootstrap-extended/_variables.scss';
+
+.customer-contact-no-data {
+  background-color: #f9fafc;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.no-data-title {
+  font-size: 16px;
+
+  color: $text-level2;
+}

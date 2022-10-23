@@ -1,0 +1,230 @@
+$header-color: #1F2A33;
+$label-color: #52708C;
+$btn-secondary-color: #718FAB;
+
+// Setting
+.general-setting, .configuration-setting, .system-alert-setting {
+  .btn {
+    width: 115px;
+    height: 45px;
+  }
+
+  .btn-secondary {
+    color: $sidebarColor !important;
+  }
+
+  .card {
+    height: 120px;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px;
+    //for tablet
+    @include media-breakpoint-down(md) {
+    }
+    //for mobile
+    @include media-breakpoint-down(xs) {
+      height: auto;
+      flex-direction: column;
+    }
+
+    &:last-of-type, &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(6),
+    &:nth-of-type(8), &:nth-of-type(10), &:nth-of-type(12), &:nth-of-type(14) {
+      margin-right: 0;
+    }
+
+    .separator {
+      display: block;
+      min-width: 60px;
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $header-color;
+      margin-bottom: 10px !important;
+    }
+
+    label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 18px;
+      color: $dark-green;
+    }
+
+    .form-group {
+      border: none;
+      margin-bottom: 0;
+
+      .form-control {
+        color: $sidebar;
+        padding: 0;
+      }
+
+      .input-group {
+        border: none;
+        color: $sidebar;
+
+        input {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 29px;
+          text-align: right;
+        }
+
+        .form-control, &-append {
+          border: none;
+        }
+
+        &-append {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .custom-switch {
+      margin-right: 0;
+
+      .custom-control-label {
+        padding-left: 42px;
+      }
+    }
+  }
+
+  [class*='row'] {
+    [class*='col'] {
+      .btn {
+        height: 45px;
+        min-width: 115px;
+        font-size: 14px;
+      }
+
+      .btn-secondary {
+        color: $btn-secondary-color !important;
+      }
+    }
+  }
+
+  .react-select {
+    margin-left: 0;
+    width: 100%;
+
+    .select {
+      &__control {
+        border: none;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+
+      &__single-value {
+        color: $sidebar;
+        font-size: 16px;
+      }
+
+      &__indicator {
+        color: $sidebar;
+      }
+    }
+  }
+
+  .group-button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .css-1uccc91-singleValue {
+    overflow: initial !important;
+  }
+}
+
+.system-alert-setting {
+  .input-group {
+    border: 1px solid $border-color !important;
+    border-radius: $border-radius;
+    padding: 0 20px;
+
+    .form-control, &-append, .input-group-text {
+      border: none;
+      color: $sidebarColor !important;
+    }
+
+    input, &-append {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    input {
+      text-align: left !important;
+    }
+
+  }
+}
+
+.configuration-setting {
+  .card {
+    .form-group {
+      .input-group {
+        .form-control {
+          font-weight: 600;
+          font-size: 24px;
+          color: $sidebar;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .general-setting, .configuration-setting, .system-alert-setting {
+    h5 {
+      color: $theme-dark-body-color;
+    }
+
+    .form-group {
+
+      .form-control {
+        color: $theme-dark-body-color;
+      }
+
+      .input-group {
+        color: $theme-dark-body-color;
+      }
+    }
+  }
+
+  .configuration-setting {
+    .card {
+      .form-group {
+        .input-group {
+          .form-control {
+            color: $theme-dark-body-color;
+          }
+        }
+      }
+    }
+  }
+
+  .system-alert-setting {
+    .card {
+      .form-group {
+        .custom-control {
+          .custom-control-label {
+            &::after {
+              background-color: $dark-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 18</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-line-update" transform="translate(-716.000000, -610.000000)">
+            <g id="Group-19" transform="translate(615.000000, 588.000000)">
+                <g id="Group-18" transform="translate(102.000000, 24.000000)">
+                    <path id="Line-Copy-4" d="M49.5,37.5 L49.5,57.5 L53.5,57.5 L49,66.5 L44.5,57.5 L48.5,57.5 L48.5,37.5 L49.5,37.5 Z" fill="#4AC367" fill-rule="nonzero"></path>
+                    <path id="Line-Copy-3" d="M49,-0.5 L53.5,8.5 L49.5,8.5 L49.5,28.5 L48.5,28.5 L48.5,8.5 L44.5,8.5 L49,-0.5 Z" fill="#4AC367" fill-rule="nonzero"></path>
+                    <g id="Group-17-Copy" transform="translate(0.000000, 19.000000)" stroke="#4AC367" stroke-linecap="square">
+                        <path d="M0,14 C27,14 45.8333333,14 56.5,14 C63,14 67,13.007874 68,7.05511811 C67.6666667,1.76377953 64,-0.551181102 57,0.11023622" id="Line-7"></path>
+                        <path d="M0,28 C27,28 45.8333333,28 56.5,28 C63,28 67,27.007874 68,21.0551181 C67.6666667,15.7637795 64,13.4488189 57,14.1102362" id="Line-7-Copy" transform="translate(34.000000, 21.000000) scale(1, -1) translate(-34.000000, -21.000000) "></path>
+                    </g>
+                    <text id="…kWh-Copy-3" font-family="Helvetica" font-size="12" font-weight="normal" line-spacing="12" fill="#333333">
+                        <tspan x="9" y="22">…</tspan>
+                        <tspan x="3" y="34">kWh</tspan>
+                    </text>
+                    <text id="…kWh-Copy-2" font-family="Helvetica" font-size="12" font-weight="normal" line-spacing="12" fill="#333333">
+                        <tspan x="9" y="54">…</tspan>
+                        <tspan x="3" y="66">kWh</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

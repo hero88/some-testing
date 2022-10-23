@@ -1,0 +1,90 @@
+//  ================================================================================================
+//  File Name: variables-dark.scss
+//  Description: Custom dark theme variables
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+//  ================================================================================================
+
+//  ================================================================================================
+//  WARNING: PLEASE DO NOT CHANGE THIS VARIABLE FILE.
+//  THIS FILE WILL GET OVERWRITTEN WITH EACH VUEXY HTML TEMPLATE RELEASE.
+//  TIP:
+//  We suggest you to use this (assets/scss/variables/_variables-components.scss) file for overriding components variables.
+//  ================================================================================================
+
+//all
+$body: #011C40;
+$card: #151D27;
+$text-body: #DEE1E8;
+$text-sub: #949BA7;
+$text-placeholder: rgba(148, 155, 167, 0.25);
+$bg-form: #292D39;
+// Color new UI
+$bg-total-row: #E3ECF8 !default;
+// Dashboard
+$dark-2: #292D39;
+$dark-3: #3D4457;
+$dark-4: #313645;
+$dark-background: #181C28;
+$dark-linear: #0394FF;
+$dark-text-yesterday: #C8DAF1;
+$dark-mute-text: #838A9C;
+
+//
+$text-dark-level2: #DEE1E8;
+$sub-text-level2: #7897B4;
+//Body
+$theme-dark-body-bg: $dark-4 !default;
+$theme-dark-body-color: $text-body !default;
+$theme-dark-label: $text-sub !default;
+$theme-dark-border-color: $dark-3 !default;
+$theme-dark-custom-control-border-color: $dark-mute-text !default;
+//
+$sidebarDark: #292D39 !default;
+$sidebarTextDark: #838A9C !default;
+$sidebarTextActiveDark: #C8DAF1 !default;
+$sidebarBgActiveDark: #313645 !default;
+$borderDark: #98AABB !default;
+$borderModalDark: #DBDBDB !default;
+$placeholderDark: #8AACCB !default;
+$headerbarDark: #313645 !default;
+
+//Typography
+$theme-dark-headings-color: $text-body !default;
+$theme-dark-label-color: $text-sub !default;
+$theme-dark-text-muted-color: #676d7d !default;
+
+//Card
+$theme-dark-card-bg: #292D39 !default;
+$theme-dark-box-shadow: 0 4px 24px 0 rgba($black, 0.24);
+$body-bg-dark: #181C28 !default;
+
+//Input
+$theme-dark-input-bg: $bg-form !default;
+$theme-dark-input-placeholder-color: $text-placeholder !default;
+$theme-dark-input-border-color: $theme-dark-custom-control-border-color !default;
+$theme-dark-input-disabled-bg: #24233a !default;
+$theme-dark-input-disabled-border-color: #444b60 !default;
+
+// Switch
+$theme-dark-switch-bg: #545a6a;
+$theme-dark-switch-bg-disabled: #1b2337;
+
+//Table
+$theme-dark-table-bg: $dark-background !default;
+$theme-dark-table-header-bg: $dark-3 !default;
+$theme-dark-table-header-text: $dark-text-yesterday !default;
+$theme-dark-table-row-bg: $dark-background !default;
+$theme-dark-table-hover-bg: #283046 !default;
+$theme-dark-table-striped-bg: #1A232E !default;
+
+$theme-dark-modal-header-bg: #161d31 !default;
+$theme-dark-pagination-bg: $dark-4 !default;
+$theme-dark-chart-bg: #384056 !default;
+$theme-dark-widget-bg: #384056 !default;
+
+// Select
+$theme-dark-select-bg: $dark-2 !default;
+$theme-dark-select-border: $dark-mute-text !default;

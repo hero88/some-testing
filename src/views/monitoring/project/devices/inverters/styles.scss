@@ -1,0 +1,42 @@
+.customCol {
+    background-color: rgba(255, 255, 255, 0.4);
+    // padding: 5px 25px 5px 25px;
+}
+
+select {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #486077;
+    border: 1px solid #486077;
+    border-radius: 2px;
+    padding: 5px 40px 5px 5px;
+    background: transparent;
+}
+
+.customInp {
+    color: #486077;
+    border: 1px solid #486077;
+    border-radius: 2px;
+    height: 32px;
+    width: 100px;
+}
+
+.divider {
+    border-left: 1px solid #486077;
+    height: 25px;
+}
+
+.btn-settings1 {
+    color: white;
+    background-color: #026894;
+    height: 40px;
+    width: 110px;
+}
+
+.btn-settings2 {
+    color: white;
+    background-color: #0394FF;
+    height: 40px;
+    width: 110px;
+}

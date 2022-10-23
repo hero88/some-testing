@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="8px" viewBox="0 0 107 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top-line</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="single-line-update" transform="translate(-702.000000, -395.000000)" stroke="#00BCD4">
+            <path d="M808,403 L808,397.009174 C808,396.583305 807.716564,396.308642 807.149693,396.185185 C806.582822,396.061728 804.882209,396 802.047853,396 L702,396" id="top-line"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>inverter-small</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="6"></rect>
+        <rect id="path-3" x="0" y="0" width="40" height="40" rx="6"></rect>
+    </defs>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="inverter-small">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask-Copy" fill="#D5DCE4" xlink:href="#path-1"></use>
+            <g>
+                <rect id="Rectangle" stroke="#00BCD4" x="0.5" y="0.5" width="39" height="39" rx="6"></rect>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="path-1"></g>
+                <polygon id="Fill-7" fill-opacity="0.4" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)" transform="translate(18.868132, 21.000100) rotate(-15.000000) translate(-18.868132, -21.000100) " points="52.7366638 1.00010003 52.7366638 1.91818285 -14.5866332 41.0001 -15.0004 41.0001 -15.0004 40.1130481"></polygon>
+                <polygon id="Combined-Shape-path" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)" points="14.4988488 9.27171151 14.4988488 10.3505016 4.23239426 10.3505016 4.23239426 9.27171151"></polygon>
+                <path d="M8.1953893,5.44871358 C8.1953893,5.44871358 8.58563465,5.35046999 10.7774322,6.67948737 C10.9495684,6.78402862 12.0384348,7.25005587 13.2692086,5.77892118 C13.4235014,5.5946095 14.4987229,6.40931751 14.4987229,6.40931751 C14.4987229,6.40931751 13.8397771,8.45102071 10.9575455,8.21086973 C10.3561184,8.16069833 8.13535156,6.96141287 7.80514396,6.7905362 C7.47472643,6.61965954 6.21372385,6.5596218 5.43323315,7.94069987 C5.27327244,8.22346506 4.23226831,6.97988602 4.23226831,6.97988602 C4.23226831,6.97988602 5.28313878,4.87814507 8.1953893,5.44871358 Z" id="Combined-Shape-path" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)"></path>
+                <polygon id="Combined-Shape-path" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)" points="27.8698434 32.6767985 27.8698434 34 23.0698434 34 23.0698434 32.6767985"></polygon>
+                <polygon id="Combined-Shape-path" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)" points="35 32.646403 35 33.9696045 30.2 33.9696045 30.2 32.646403"></polygon>
+                <polygon id="Combined-Shape-path" fill="#00BCD4" fill-rule="nonzero" mask="url(#mask-4)" points="35 30 35 31.3232015 23 31.3232015 23 30"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

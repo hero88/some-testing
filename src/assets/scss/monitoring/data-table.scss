@@ -1,0 +1,550 @@
+.react-dataTable {
+  /* Corner box */
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  .rdt_Table {
+    .rdt_TableHead {
+      .rdt_TableHeadRow {
+        .rdt_TableCol {
+          display: flex;
+          // justify-content: center;
+          align-content: center;
+        }
+      }
+    }
+    .rdt_TableBody {
+      #row-projectTotalRow {
+        background-color: $bg-total-row;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+    }
+  }
+
+  &--alerts {
+    .rdt_Table {
+      .rdt_TableBody {
+        min-height: 200px;
+
+        .rdt_TableCell {
+          height: auto;
+          font-weight: inherit;
+        }
+      }
+    }
+  }
+
+  &--auto-create-project {
+    .rdt_Table {
+      .rdt_TableBody {
+        .rdt_TableRow {
+          .rdt_TableCell {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &--operation {
+    div {
+      .rdt_Table {
+        .rdt_TableBody {
+          .rdt_TableRow {
+            min-height: auto;
+
+            .rdt_TableCell {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--users,
+  &--customers,
+  &--projects,
+  &--alerts {
+    .rdt_Table {
+      .rdt_TableBody {
+        .rdt_TableRow {
+          flex: 0 0 auto;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px dashed $border-color;
+          }
+
+          &:hover {
+            //color: $primary !important;
+            //background: #f6f6f9;
+          }
+
+          .btn-icon {
+            &:hover {
+              color: $primary !important;
+            }
+          }
+
+          .rdt_TableCell {
+            padding: 0.625rem 0.938rem;
+            height: auto;
+
+            &:first-child {
+              padding-left: 1.25rem !important;
+            }
+
+            .badge.badge-light-success {
+              min-width: 150px;
+              border: 2px solid $success;
+            }
+
+            .badge.badge-light-muted {
+              min-width: 150px;
+              border: 2px solid $dark-mute-text;
+              color: $dark-mute-text;
+            }
+          }
+        }
+      }
+    }
+
+    .custom-no-record,
+    .custom-progress-component {
+      min-height: calc(100vh - 350px);
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .doBktq {
+      height: 42px !important;
+      min-height: 42px !important;
+    }
+  }
+
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      .rdt_TableCol {
+        padding: 0.625rem 0.938rem !important;
+
+        &:first-child {
+          padding-left: 1.25rem !important;
+        }
+      }
+    }
+  }
+
+  &--meters {
+    &__chart {
+      .rdt_Table {
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            height: 60px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &--dark-scroll {
+      /* width */
+      ::-webkit-scrollbar {
+        //width: 20px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        //box-shadow: inset 0 0 5px grey;
+        //border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: $theme-dark-body-color;
+        border-radius: 5px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+      }
+    }
+  }
+
+  &--inverters,
+  &--meters,
+  &--panels {
+    .rdt_Table {
+      .rdt_TableBody {
+        .rdt_TableRow {
+          border: none;
+
+          // striped
+          &:nth-child(even) {
+            background-color: rgba($dark-text-yesterday, 0.2);
+          }
+
+          .rdt_TableCell {
+            color: $body-color;
+            padding: 0.625rem 0.938rem;
+
+            .badge {
+              width: 165px;
+              height: 35px;
+              border-width: 2px;
+              border-style: solid;
+              border-radius: 17.5px;
+              color: $body-color;
+
+              &.badge-success {
+                border-color: $green;
+                color: $green;
+              }
+
+              &.badge-dark {
+                border-color: $blue;
+                color: $blue;
+              }
+            }
+
+            button {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--charts {
+    .rdt_Table {
+      .rdt_TableBody {
+        .rdt_TableRow {
+          button {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &--yield-report,
+  &--operation-report {
+    height: calc(100vh - 400px);
+    overflow-y: auto !important;
+
+    .rdt_Table {
+      .rdt_TableHead {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        .rdt_TableHeadRow {
+          .rdt_TableCol {
+            background-color: $secondary;
+
+            &:first-child {
+              position: sticky;
+              left: 0;
+              z-index: 1;
+            }
+
+            &:nth-child(2) {
+              position: sticky;
+              left: 50px;
+              z-index: 1;
+            }
+
+            &:nth-child(3) {
+              position: sticky;
+              left: 130px;
+              z-index: 1;
+            }
+
+            &:nth-child(4) {
+              position: sticky;
+              left: 230px;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      .rdt_TableBody {
+        #row-projectTotalRow {
+          background-color: $bg-total-row;
+          position: sticky;
+          top: 50px;
+          z-index: 2;
+
+          .rdt_TableCell {
+            background-color: $bg-total-row;
+          }
+        }
+
+        .rdt_TableRow {
+          .rdt_TableCell {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &--operation-report {
+    .rdt_Table {
+      .rdt_TableHead {
+        .rdt_TableHeadRow {
+          .rdt_TableCol {
+            #column-meters,
+            #column-inverters,
+            #column-system,
+            #column-reductionYield {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--monitoring-project {
+    height: calc(100vh - 250px);
+    overflow-y: auto !important;
+
+    .rdt_Table {
+      .rdt_TableHead {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        .rdt_TableHeadRow {
+          .rdt_TableCol {
+            background-color: $secondary;
+
+            &:first-child {
+              position: sticky;
+              left: 0;
+              z-index: 1;
+            }
+
+            &:nth-child(2) {
+              position: sticky;
+              left: 50px;
+              z-index: 1;
+            }
+
+            &:nth-child(3) {
+              position: sticky;
+              left: 150px;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      .rdt_TableBody {
+        #row-projectTotalRow {
+          background-color: $bg-total-row;
+          position: sticky;
+          top: 50px;
+          z-index: 2;
+
+          .rdt_TableCell {
+            background-color: $bg-total-row;
+          }
+        }
+
+        .rdt_TableRow {
+          .rdt_TableCell {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &--monitoring-meter {
+    height: calc(100vh - 380px);
+    overflow-y: auto !important;
+
+    .rdt_Table {
+      .rdt_TableHead {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+
+        .rdt_TableHeadRow {
+          .rdt_TableCol {
+            background-color: $secondary;
+
+            &:first-child {
+              position: sticky;
+              left: 0;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      .rdt_TableBody {
+        .rdt_TableRow {
+          .rdt_TableCell {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-table {
+  tbody {
+    tr {
+      &:not(:last-child) {
+        border-bottom: 1px dashed $border-color;
+      }
+
+      td {
+        border: none;
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .react-dataTable {
+    .rdt_Table {
+      .rdt_TableBody {
+        #row-projectTotalRow {
+          background-color: $dark-4;
+        }
+      }
+    }
+
+    &--customers,
+    &--projects,
+    &--users,
+    &--alerts {
+      .rdt_Table {
+        .rdt_TableBody {
+          .rdt_TableRow {
+            &:not(:last-of-type) {
+              border-bottom: 1px dashed $dark-3;
+            }
+
+            &:hover {
+              //color: $primary !important;
+              background: $theme-dark-table-hover-bg;
+            }
+          }
+        }
+      }
+
+      > .rdt_TableHead {
+        .rdt_TableHeadRow {
+          .rdt_TableCol {
+            color: $theme-dark-table-header-text !important;
+          }
+        }
+      }
+    }
+
+    &--inverters,
+    &--meters,
+    &--panels {
+      .rdt_Table {
+        .rdt_TableBody {
+          .rdt_TableRow {
+            border: none;
+
+            // striped
+            &:nth-child(even) {
+              background-color: rgba($dark-3, 0.2);
+            }
+          }
+        }
+      }
+    }
+
+    &--monitoring-project,
+    &--monitoring-meter,
+    &--yield-report,
+    &--operation-report {
+      .rdt_Table {
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            .rdt_TableCol {
+              background-color: $theme-dark-table-header-bg;
+            }
+          }
+        }
+
+        .rdt_TableBody {
+          #row-projectTotalRow {
+            background-color: $dark-4;
+            position: sticky;
+            top: 50px;
+            z-index: 2;
+
+            .rdt_TableCell {
+              background-color: $dark-4;
+            }
+          }
+
+          .rdt_TableRow {
+            .rdt_TableCell {
+              background-color: $theme-dark-table-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .custom-table {
+    tbody {
+      tr {
+        &:not(:last-child) {
+          border-bottom: 1px dashed $dark-3;
+        }
+      }
+    }
+  }
+
+  // Setting scroll bar color
+  /* width */
+  ::-webkit-scrollbar {
+    //width: 20px;
+    //background: $dark-3;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    //box-shadow: inset 0 0 5px grey;
+    //border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $dark-3;
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }
+
+  /* Corner box */
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

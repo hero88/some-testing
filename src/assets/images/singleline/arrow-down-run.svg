@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-down-green</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-line-update" transform="translate(-1091.000000, -332.000000)" fill="#4AC367" fill-rule="nonzero">
+            <polygon id="arrow-down-green" transform="translate(1098.500000, 338.500000) rotate(180.000000) translate(-1098.500000, -338.500000) " points="1091.5 344.5 1098.5 332.5 1105.5 344.5"></polygon>
+        </g>
+    </g>
+</svg>

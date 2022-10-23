@@ -1,0 +1,180 @@
+$login-divider-color: #52708C;
+$link-color: #8AACCB;
+
+// Login page
+.login-page {
+  color: $secondary;
+  font-size: 16px;
+  background-image: url('https://storage.googleapis.com/project-se01.appspot.com/media/ree-login-backgroud.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+  height: 100%;
+
+  .auth-wrapper {
+    height: 100%;
+    padding: 20px 20px 0 20px;
+    background-color: rgba($sidebar, 0.7);
+    display: flex;
+    flex-direction: column;
+
+    .auth-inner {
+      width: 460px;
+      margin-bottom: 20px;
+      background: $sidebar;
+      border-radius: $border-radius;
+      padding: 30px 40px;
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
+
+      &::before,
+      &::after {
+        background-image: none !important;
+      }
+
+      .card-title {
+        margin-top: 14px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 18px;
+        @include media-breakpoint-down(xs) {
+          font-size: 16px;
+        }
+      }
+
+      .brand-logo {
+        margin: 0;
+
+        img {
+          width: 208px;
+          height: 100px;
+          @include media-breakpoint-down(xs) {
+            height: 70px;
+          }
+        }
+      }
+
+      .form-group {
+        margin-top: 25px;
+
+        .form-control, .input-group-append {
+          min-height: 40px;
+          background: none;
+          border: 1px solid $login-divider-color;
+          border-radius: $border-radius;
+          color: $secondary;
+          font-size: 16px;
+          padding-right: 22px;
+          padding-left: 22px;
+
+          // Fix autofill change background and text color
+          /* Change the white to any color */
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 40px $sidebar inset !important;
+            -webkit-border-radius: $border-radius !important;
+          }
+
+          /*Change text in autofill textbox*/
+          &:-webkit-autofill{
+            -webkit-text-fill-color: $secondary;
+            caret-color: $secondary;
+          }
+        }
+
+        #login-password {
+          border-right: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          // Fix autofill change background and text color
+          /* Change the white to any color */
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            -webkit-border-top-right-radius: 0 !important;
+            -webkit-border-bottom-right-radius: 0 !important;
+          }
+        }
+
+        .input-group-append {
+          border-left: none;
+          padding-left: 0;
+          padding-right: 10px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+
+        .form-label {
+          color: $secondary !important;
+          font-size: 13px;
+        }
+
+        a {
+          color: $link-color;
+        }
+      }
+
+      .forgot-password {
+        margin-top: 0;
+        float: right;
+        font-size: 14px;
+      }
+
+      .divider {
+        margin: 15px 0 !important;
+
+        .divider-text {
+          color: $login-divider-color;
+          font-size: 12px;
+
+          &::before,
+          &::after {
+            border-top: 1px solid $login-divider-color;
+          }
+        }
+      }
+    }
+
+    .btn-block {
+      margin-top: 65px;
+      border-radius: 26px;
+    }
+
+    .btn-google-login {
+      background-color: transparent !important;
+      color: $secondary !important;
+      border: 1px solid $border-color !important;
+      border-radius: $border-radius !important;
+
+      div {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+.auth-wrapper.auth-v1 .auth-inner {
+  max-width: inherit !important;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: blue;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}

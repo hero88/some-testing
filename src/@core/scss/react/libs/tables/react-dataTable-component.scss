@@ -1,0 +1,565 @@
+@import '../../../base/bootstrap-extended/include';
+@import '../../../base/components/include';
+
+.react-dataTable {
+  border-radius: 0;
+
+  .rdt_TableHead {
+    .rdt_TableHeadRow {
+      background-color: $table-head-bg;
+      border-bottom: 0;
+      min-height: 0;
+      height: 50px;
+
+      .rdt_TableCol {
+        padding: 10px;
+
+        &:first-of-type {
+          padding-left: 20px;
+        }
+
+        .rdt_TableCol_Sortable {
+          color: $table-head-color;
+          font-weight: 600;
+          font-family: 'Inter', sans-serif;
+          font-size: 12px;
+          letter-spacing: 0;
+          text-align: center;
+
+          &:hover {
+            color: $body-color;
+          }
+        }
+      }
+    }
+  }
+
+  .rdt_TableBody {
+    .rdt_TableRow {
+      flex: 0 0 auto;
+      min-height: 60px;
+      height: inherit;
+      color: $body-color;
+      font-size: 14px;
+      align-content: center;
+
+      .rdt_TableCell {
+        padding: 10px;
+
+        &:first-of-type {
+          padding-left: 20px;
+        }
+
+        .column-action {
+          svg {
+            stroke: $body-color;
+          }
+
+          .dropdown-item:hover {
+            svg {
+              stroke: $primary;
+            }
+          }
+
+          .dropdown-item:active {
+            svg {
+              stroke: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .react-paginate {
+    &.separated-pagination {
+      .page-item:first-child .page-link,
+      .page-item:last-child .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.rdt_Pagination {
+  select {
+    min-width: 30px;
+
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+.d-flex {
+  .dataTable-select {
+    width: 5rem;
+
+    &:not([multiple='multiple']) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      background-position: calc(100% - 12px) 10px, calc(100% - 20px) 12px, 100% 0;
+      background-size: 10px 10px, 10px 10px;
+    }
+  }
+
+  .dataTable-filter {
+    max-width: 170px;
+    height: 38px;
+  }
+}
+
+.dark-layout {
+  .app-user-list {
+    header {
+      background-color: $theme-dark-card-bg;
+    }
+  }
+
+  .react-dataTable {
+    .hlidmt {
+      background-color: $dark-background;
+    }
+
+    .khKjDK {
+      background-color: $dark-background;
+      color: $theme-dark-body-color;
+    }
+
+    .rdt_Table {
+      background: $dark-background;
+      color: $theme-dark-body-color;
+    }
+
+    .rdt_TableHead {
+      .rdt_TableHeadRow {
+        background-color: $theme-dark-table-header-bg;
+        border-color: $theme-dark-border-color;
+
+        .rdt_TableCol {
+          color: $theme-dark-body-color;
+
+          div[role='button'] {
+            color: $theme-dark-body-color;
+          }
+        }
+
+        .rdt_TableCol_Sortable,
+        .rdt_TableCol_Sortable:hover {
+          color: $theme-dark-headings-color;
+
+          svg {
+            stroke: $theme-dark-headings-color;
+          }
+        }
+      }
+    }
+
+    .rdt_TableBody {
+      .expandable-content {
+        background-color: $theme-dark-table-bg;
+        color: $theme-dark-body-color;
+      }
+
+      .rdt_TableRow {
+        background-color: $theme-dark-table-bg;
+        color: $theme-dark-body-color;
+        border-color: $theme-dark-border-color;
+
+        .rdt_TableCell {
+          color: $theme-dark-body-color;
+        }
+
+        button {
+          &:hover:not(:disabled) {
+            background-color: $theme-dark-body-bg;
+          }
+
+          svg {
+            color: $theme-dark-body-color;
+          }
+        }
+      }
+    }
+
+    .rdt_Pagination {
+      background-color: $theme-dark-table-header-bg;
+      color: $theme-dark-body-color;
+
+      svg {
+        fill: $theme-dark-body-color;
+      }
+    }
+  }
+
+  .rdt_Pagination, .custom-pagination {
+    color: $theme-dark-body-color;
+    background-color: $theme-dark-table-header-bg;
+
+    button {
+      svg {
+        fill: $theme-dark-body-color;
+      }
+
+      &[disabled] svg {
+        fill: $theme-dark-text-muted-color;
+      }
+    }
+
+    .react-select {
+      .select {
+        &__control {
+          background-color: $theme-dark-table-header-bg;
+          border-bottom: 1px solid #8AACCB;
+        }
+      }
+    }
+
+    ul {
+      .page-item {
+        .page-link {
+          background-color: $theme-dark-table-header-bg;
+        }
+      }
+    }
+
+    .display-range {
+      .display-unit {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.kXoDmX:not(:last-of-type) {
+  border-bottom: 1px dashed $border-color;
+}
+
+//react-select
+.select__control .select__placeholder, .react-select__control .select__placeholder {
+  color: $placeholder-form !important;
+  font-size: 14px !important;
+  font-weight: normal;
+}
+
+//search-group
+.input-group-merge {
+  .input-group-text {
+    background-color: transparent;
+    border: 1px solid $border-color;
+    border-left: 0;
+    border-radius: 3px;
+  }
+}
+
+//button-show-column
+.show-column {
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+
+  button {
+    display: inline-flex;
+    background: $primary;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius !important;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    @include media-breakpoint-down(md) {
+      padding: 0 20px;
+    }
+    //for mobile
+    @include media-breakpoint-down(xs) {
+      padding: 0 20px;
+    }
+
+    &:hover, &:hover:not(.disabled):not(:disabled) {
+      box-shadow: 0 8px 25px -8px $primary;
+      background: $primary !important;
+    }
+  }
+
+  .btn-outline-primary:not(:disabled):not(.disabled):active,
+  .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .btn-outline-primary:not(:disabled):not(.disabled):focus {
+    box-shadow: 0 8px 25px -8px $primary;
+    background: $primary !important;
+  }
+
+  span {
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+  }
+}
+
+//pagination
+.page-item.active .page-link {
+  border-radius: $border-radius;
+  background-color: $sidebar;
+  color: $body-bg !important;
+}
+
+.pagination.pagination-sm .page-item .page-link {
+  font-size: 14px;
+  font-weight: normal;
+  color: $sidebarColor;
+  min-width: 25px;
+  height: 25px;
+}
+
+.custom-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .display-range {
+    .display-unit {
+      font-weight: bold;
+    }
+  }
+
+  .show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .react-select {
+    .select {
+      &__control {
+        border-width: 0 0 1px 0;
+        border-radius: 0;
+        padding: 0;
+      }
+
+      &__value-container {
+
+        min-width: 35px;
+        padding: 0 5px;
+
+        .select__single-value {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .page-item {
+      margin: 0 5px;
+
+      &.prev {
+        .page-link {
+          background: none;
+
+          &:hover {
+            &::before {
+              background-size: 8px;
+              background-image: url("../../../../../assets/images/svg/pagination/prev-single-arrow.svg") !important;
+            }
+          }
+
+          &::before {
+            background-size: 8px;
+            background-image: url("../../../../../assets/images/svg/pagination/prev-single-arrow.svg");
+          }
+
+          &.double {
+            &:hover {
+              &::before {
+                background-size: 12px;
+                background-image: url("../../../../../assets/images/svg/pagination/prev-double-arrow.svg") !important;
+              }
+            }
+
+            &::before {
+              background-size: 12px;
+              background-image: url("../../../../../assets/images/svg/pagination/prev-double-arrow.svg");
+            }
+          }
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+
+          .page-link {
+            &:hover {
+              &::before {
+                background-size: 8px;
+                background-image: url("../../../../../assets/images/svg/pagination/prev-single-arrow.svg") !important;
+              }
+            }
+
+            &::before {
+              background-size: 8px;
+              background-image: url("../../../../../assets/images/svg/pagination/prev-single-arrow.svg");
+            }
+
+            &.double {
+              &:hover {
+                &::before {
+                  background-size: 12px;
+                  background-image: url("../../../../../assets/images/svg/pagination/prev-double-arrow.svg") !important;
+                }
+              }
+
+              &::before {
+                background-size: 12px;
+                background-image: url("../../../../../assets/images/svg/pagination/prev-double-arrow.svg");
+              }
+            }
+          }
+        }
+      }
+
+      &.next {
+        .page-link {
+          background: none;
+
+          &:hover {
+            &::after {
+              background-size: 8px;
+              background-image: url("../../../../../assets/images/svg/pagination/next-single-arrow.svg") !important;
+            }
+          }
+
+          &::after {
+            background-size: 8px;
+            background-image: url("../../../../../assets/images/svg/pagination/next-single-arrow.svg");
+          }
+
+          &.double {
+            &:hover {
+              &::after {
+                background-size: 12px;
+                background-image: url("../../../../../assets/images/svg/pagination/next-double-arrow.svg") !important;
+              }
+            }
+
+            &::after {
+              background-size: 12px;
+              background-image: url("../../../../../assets/images/svg/pagination/next-double-arrow.svg");
+            }
+          }
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+
+          .page-link {
+            &:hover {
+              &::after {
+                background-size: 8px;
+                background-image: url("../../../../../assets/images/svg/pagination/next-single-arrow.svg") !important;
+              }
+            }
+
+            &::after {
+              background-size: 8px;
+              background-image: url("../../../../../assets/images/svg/pagination/next-single-arrow.svg");
+            }
+
+            &.double {
+              &:hover {
+                &::after {
+                  background-size: 12px;
+                  background-image: url("../../../../../assets/images/svg/pagination/next-double-arrow.svg") !important;
+                }
+              }
+
+              &::after {
+                background-size: 12px;
+                background-image: url("../../../../../assets/images/svg/pagination/next-double-arrow.svg");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .custom-pagination {
+    flex-direction: column;
+
+    .display-range {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .show {
+      justify-content: center;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .pagination {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.react-dataTable {
+  .avatar {
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  button {
+    height: 35px;
+    width: 140px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-outline-info, .btn-outline-success {
+    border-width: 2px !important;
+  }
+
+  .badge {
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    svg, img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

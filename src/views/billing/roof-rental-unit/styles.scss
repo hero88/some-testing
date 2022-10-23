@@ -1,0 +1,123 @@
+
+@import '@src/@core/scss/base/bootstrap-extended/_variables.scss';
+@import '@src/@core/scss/billing-sweet-alert.scss';
+.add-contact-button {
+  background-color: #026894 !important;
+  border: 0;
+  border-radius: 3px;
+}
+
+.tabs-border-bottom {
+  border-bottom: 1px solid $text-sub;
+}
+
+.text-bold {
+  font-weight: 600;
+  color: #000000;
+  size: 18;
+  line-height: 25px;
+}
+
+.filter-input {
+  height: 50px;
+}
+
+
+
+.filter-input {
+  height: 50px;
+}
+
+.sweet-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 27px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #042B52;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+
+.sweet-popup {
+  padding: 0;
+  width: 645px;
+  height: 275px;
+  justify-content: space-between;
+}
+
+.sweet-actions {
+  padding-bottom: 2.5rem;
+}
+
+.sweet-content {
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+ 
+  font-size: 18;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.text-header {
+  color: #7897b4;
+  width: 200px;
+  height: 24px;
+  font-weight: 600;
+  size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+ margin-bottom: 20px;
+}
+.button-style {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: absolute;
+  width: 245px;
+  height: 45.18px;
+  background-color: #026894;
+  border-radius: 3px;
+}
+
+.hightlight-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18;
+color:#F47F20;
+}
+
+
+
+
+.table-height {
+  max-height:380px;
+}
+.icon-insert {
+  border: 2px solid #FFFFFF;
+  height: 16.36px;
+  width: 16.36px;
+}

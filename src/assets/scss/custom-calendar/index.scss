@@ -1,0 +1,95 @@
+.calendar-popover {
+  .popover {
+    z-index: 1000;
+    max-width: none;
+
+    .popover-body {
+      background-color: $card-bg;
+
+      .el-date-editor {
+        width: 100%;
+
+        .el-input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#customCalendar {
+  width: 400px;
+
+  &.input-group {
+    .input-group-append {
+      .input-group-text {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+  }
+
+  .form-control[readonly] {
+    background-color: $card-bg;
+    opacity: 1;
+  }
+}
+
+.dark-layout {
+  .el-date-editor {
+    .el-input {
+      &__inner {
+        background-color: $dark-2 !important;
+        color: $theme-dark-body-color !important;
+      }
+    }
+  }
+
+  .el-picker-panel {
+    background-color: $dark-2;
+
+    &__content {
+      background-color: $dark-2 !important;
+      color: $theme-dark-body-color !important;
+
+      .el-date-table td.disabled,
+      .el-month-table td.disabled .cell,
+      .el-year-table td.disabled .cell {
+        background-color: $dark-3
+      }
+
+      .el-date-table td.in-range,
+      .el-date-table td.available:hover,
+      .el-month-table td .cell:hover,
+      .el-year-table td .cell:hover,
+      .el-date-table.is-week-mode .el-date-table__row:hover {
+        background-color: rgba($primary, 0.5);
+      }
+
+      .el-date-table td.available:hover,
+      .el-month-table td .cell:hover,
+      .el-year-table td .cell:hover,
+      .el-date-table.is-week-mode .el-date-table__row:hover {
+        color: $theme-dark-body-color;
+      }
+
+      .el-date-table.is-week-mode .el-date-table__row.current {
+        background-color: rgba($primary, 0.5);
+      }
+    }
+  }
+
+  .calendar-popover {
+    .popover {
+      .popover-body {
+        background-color: $dark-2;
+      }
+    }
+  }
+
+  #customCalendar {
+    .form-control[readonly] {
+      background-color: $dark-2;
+    }
+  }
+}

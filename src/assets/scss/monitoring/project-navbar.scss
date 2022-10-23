@@ -1,0 +1,41 @@
+.project-navbar {
+  border-bottom: 1px solid $border-color;
+  border-radius: 0;
+  margin-bottom: 20px;
+  width: 100%;
+    .nav-item {
+      padding: 10px 10px !important;
+      margin-right: 0 !important;
+      text-align: center;
+      width: auto !important;
+      border-bottom: 0;
+      border-radius: 0 !important;
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 0 !important;
+      }
+      a{
+        color: $border-color;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      &.active {
+        border: 0 !important;
+        border-bottom: solid 2px $primary !important;
+        box-shadow: none !important;
+
+        a {
+          color: $primary;
+          font-weight: 600;
+        }
+      }
+
+    }
+}
+.report{
+  margin-bottom: 0 !important;
+  background: $card-bg;
+  border-bottom: 1px solid $text-body;
+  .nav-item {
+    width: auto !important;
+  }
+}

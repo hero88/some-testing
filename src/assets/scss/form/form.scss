@@ -1,0 +1,39 @@
+// Custom control (checkbox)
+.form-group {
+  color: $body-color;
+
+  .form-label {
+    color: $body-color;
+  }
+
+  .custom-control {
+    z-index: auto;
+  }
+
+  .form-control,
+  .input-group-append,
+  .input-group-prepend {
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    background: none;
+    height: 45px;
+    button {
+      border: none;
+      background: none;
+    }
+  }
+
+  .input-group,
+  .input-group-text {
+    border: none;
+
+    .input-group-append,
+    .input-group-prepend {
+      .btn-icon, .input-group-text {
+        border: none !important;
+        background: none;
+      }
+    }
+  }
+}
+

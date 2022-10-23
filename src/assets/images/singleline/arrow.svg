@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="24px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-line-update" transform="translate(-1013.000000, -327.000000)" fill="#00BCD4" fill-rule="nonzero">
+            <path id="arrow" d="M1018,327.5 L1022.5,336.5 L1018.5,336.5 L1018.5,350.5 L1017.5,350.5 L1017.5,336.5 L1013.5,336.5 L1018,327.5 Z"></path>
+        </g>
+    </g>
+</svg>

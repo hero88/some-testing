@@ -1,0 +1,159 @@
+$login-divider-color: #52708C;
+$link-color: #8AACCB;
+
+// Forgot password page
+.forgot-password-page {
+  height: 100%;
+  color: $secondary;
+  font-size: 16px;
+  background-image: url('https://storage.googleapis.com/project-se01.appspot.com/media/ree-login-backgroud.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+  .auth-wrapper {
+    height: 100%;
+    background-color: rgba($sidebar, 0.7);
+
+    .auth-inner {
+      width: 580px;
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        padding: 0 20px;
+      }
+      &::before,
+      &::after {
+        background-image: none !important;
+      }
+
+      &--success {
+        top: calc(50% - 180px);
+        //height: 360px;
+      }
+
+      .card {
+        background: $sidebar;
+        width: 580px;
+        @include media-breakpoint-down(xs) {
+          width: 100%;
+        }
+        &--success {
+          //height: 360px;
+        }
+
+        .card-title {
+          margin-top: 14px;
+          margin-bottom: 15px !important;
+          color: white;
+          font-size: 24px;
+        }
+
+        .card-body {
+          padding: 40px 50px !important;
+          @include media-breakpoint-down(xs) {
+            width: 100%;
+            padding: 20px!important;
+          }
+          .brand-logo {
+            img {
+              width: 208px;
+              height: 150px;
+              @include media-breakpoint-down(xs) {
+               height: 70px;
+              }
+            }
+          }
+
+          .form-group {
+            margin-top: 25px;
+
+            .form-control, .input-group-append {
+              min-height: 40px;
+              background: none;
+              border: 1px solid $login-divider-color;
+              border-radius: $border-radius;
+              color: $secondary;
+              font-size: 18px;
+              padding-right: 22px;
+              padding-left: 22px;
+
+              // Fix autofill change background and text color
+              /* Change the white to any color */
+              &:-webkit-autofill,
+              &:-webkit-autofill:hover,
+              &:-webkit-autofill:focus,
+              &:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 40px $sidebar inset;
+              }
+
+              /*Change text in autofill textbox*/
+              &:-webkit-autofill{
+                -webkit-text-fill-color: $secondary;
+                caret-color: $secondary;
+              }
+            }
+
+            .form-label {
+              color: $secondary !important;
+              font-size: 13px;
+            }
+          }
+
+          .close-btn {
+            position: absolute;
+            cursor: pointer;
+            top: 19px;
+            right: 19px;
+            svg{
+              width: 20px;
+            }
+          }
+
+          .success-icon {
+            text-align: center;
+            margin-bottom: 29px;
+            svg{
+              width: 65px;
+            }
+          }
+
+          .continue-with-email {
+            text-align: center;
+            margin-top: 35px;
+          }
+
+          a {
+            color: $login-divider-color;
+          }
+        }
+      }
+    }
+
+    .btn-block {
+      margin-top: 50px;
+    }
+
+  }
+}
+
+//
+.setting-header{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $sidebar;
+  border-bottom: 1px solid $border-modal;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-layout {
+  .setting-header {
+    color: $theme-dark-body-color;
+  }
+}
+

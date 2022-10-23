@@ -1,0 +1,102 @@
+.loading {
+  position: absolute;
+  left: calc(50% - 75px);
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+
+  &--fallback {
+    left: calc(50% - 75px);
+    top: calc(50% - 75px);
+  }
+
+  &--request {
+    left: calc(50% - 50px);
+    top: calc(50% - 15px);
+  }
+
+  &.component-loader {
+    margin-top: -60px;
+  }
+
+  .effect-1 {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    border-left: 3px solid rgb(244, 249, 97);
+    -webkit-animation: rotateOpacity 0.8s ease infinite 0.1s;
+    animation: rotateOpacity 0.8s ease infinite 0.1s;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .effect-2 {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+    border: 3px solid transparent;
+    border-left: 3px solid rgb(6, 64, 137);
+    -webkit-animation: rotateOpacity 1.0s ease infinite 0.1s;
+    animation: rotateOpacity 1.0s ease infinite 0.1s;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .effect-3 {
+    position: absolute;
+    left: calc(50% - 70px);
+    top: calc(50% - 70px);
+    width: 140px;
+    height: 140px;
+    border: 3px solid transparent;
+    border-left: 3px solid rgb(244, 122, 47);
+    -webkit-animation: rotateOpacity 1.2s ease infinite 0.1s;
+    animation: rotateOpacity 1.2s ease infinite 0.1s;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .loading .effects {
+    transition: all 0.3s ease;
+  }
+}
+.fallback-logo {
+  position: absolute;
+  left: calc(50% - 68px);
+  top: calc(50% - 43px);
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotateOpacity {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+    opacity: 1;
+  }
+}

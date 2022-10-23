@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="38px" viewBox="0 0 13 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MCCBACB</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="single-line-update" transform="translate(-1146.000000, -479.000000)" stroke-width="1.5">
+            <g id="MCCBACB" transform="translate(1146.000000, 479.000000)">
+                <circle id="Oval" stroke="#E02020" cx="6.5" cy="6.5" r="5.75"></circle>
+                <circle id="Oval-Copy" stroke="#E02020" cx="6.5" cy="31.5" r="5.75"></circle>
+                <line x1="6.5" y1="31" x2="6.5" y2="7" id="Line-10" stroke="#00BCD4" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

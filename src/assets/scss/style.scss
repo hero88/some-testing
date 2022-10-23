@@ -1,0 +1,1602 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+@import '../../@core/scss/base/bootstrap-extended/_variables';
+@import '../../@core/scss/base/components/_variables-dark';
+@import '../../@core/scss/base/components/_variables';
+@import '../../@core/scss/base/bootstrap-extended/_include';
+@import './variables/_variables';
+@import './functions/_common';
+@import './form/form';
+@import './form/select';
+@import './login';
+@import './forgot-password';
+@import './settings';
+@import './dashboard/dashboard';
+@import './monitoring/monitoring';
+@import './monitoring/project-navbar';
+@import './monitoring/data-table';
+@import './single-line';
+@import './report';
+@import './alert';
+@import './custom-calendar';
+
+// Body
+body {
+  color: $body-color;
+
+  .btn {
+    &.btn-secondary {
+      color: $btn-secondary-color !important;
+    }
+  }
+}
+
+.project-select {
+  width: 180px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.add-project {
+  margin-left: 20px;
+}
+
+.device-bar {
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  //background-color: $white;
+  &--dark {
+    background-color: $theme-dark-card-bg;
+  }
+}
+
+// Customer's projects
+.customer__projects {
+  &--info {
+    height: calc(100% - #{$content-padding});
+    //new UI
+
+    .w-120 {
+      width: 120px;
+    }
+  }
+}
+
+//sidebar-project
+.sidebar-project {
+  .project-name {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  aside {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .level1 {
+    color: $sidebar;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .level2 {
+    font-weight: normal;
+    align-items: start;
+    width: 80%;
+
+    span {
+      &:first-of-type {
+        font-size: 16px;
+        color: $text-level2;
+      }
+
+      &:last-of-type {
+        font-size: 14px;
+        color: $sub-text-level2;
+      }
+    }
+  }
+
+  .percent {
+    color: $primary !important;
+    font-size: 20px !important;
+  }
+
+  .chart-filter {
+    max-height: calc(40vh);
+    padding: 0;
+
+    .app-collapse {
+      .card {
+        .card-header {
+          .card-title {
+            font-size: 14px !important;
+          }
+        }
+
+        .card-body {
+          .custom-control {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .sidebar-project {
+    .project-name,
+    .level1 {
+      color: $text-body;
+    }
+  }
+}
+
+//
+.device-card {
+  .card-header {
+    padding-bottom: 0 !important;
+  }
+
+  .card-body {
+    padding-top: 0 !important;
+  }
+
+  .device-info {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:first-child {
+        color: #6e6c7c;
+        font-weight: 300;
+        width: 56%;
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .device-info {
+    span {
+      &:first-child {
+        color: $theme-dark-label;
+      }
+    }
+  }
+}
+
+.table-modal {
+  max-width: 90% !important;
+}
+
+// Sweet alert 2 custom CSS
+.sweet-alert-popup {
+  &--dark {
+    background-color: $theme-dark-card-bg;
+    color: $theme-dark-body-color;
+
+    .swal2-content {
+      color: $theme-dark-body-color;
+    }
+  }
+}
+
+.system-history {
+  .card {
+    .card-header {
+      padding: 10px !important;
+
+      .card-title {
+        font-size: 14px !important;
+      }
+    }
+
+    .card-body {
+      padding: 10px !important;
+
+      .custom-control {
+        min-height: 2rem;
+      }
+
+      .custom-control-label {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Define css class for global loading message to cover
+   screen during axios operations */
+.loading-indicator:before {
+  content: '';
+  background: #000000cc;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.loading-indicator:after {
+  content: 'Loading';
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+// Custom brand logo position
+.main-menu {
+  .navbar-header {
+    &--custom {
+      height: 120px;
+      padding: 0;
+
+      .navbar-nav {
+        .navbar-brand {
+          .brand-logo {
+            img {
+              position: absolute;
+              top: 35px;
+              left: 74px;
+              max-width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-menu-content {
+    .navigation {
+      li {
+        a {
+          img {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hide close (x) button of InfoWindow on Google Map
+.gm-style-iw {
+  button {
+    display: none !important;
+  }
+}
+
+// Custom input
+.custom-control {
+  input,
+  label {
+    cursor: pointer;
+  }
+}
+
+// Hide swagger URL
+.swagger-ui {
+  .url {
+    display: none;
+  }
+
+  .version {
+    color: black !important;
+  }
+
+  small {
+    background: none !important;
+  }
+
+  .scheme-container {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// Manager email tags input
+.manager-email {
+  .selectedClass {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    .tagClass {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: solid 1px $green;
+      border-radius: $border-radius;
+      padding: 5px;
+
+      .btn {
+        height: auto;
+      }
+    }
+  }
+}
+
+// Report filter
+.report-filter {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+
+  .collapse-default {
+  }
+
+  [class*='collapse-'] .card:not(:last-of-type) {
+    border-bottom: 0;
+  }
+
+  .card {
+    .card-header {
+      padding: 10px !important;
+      background: $secondary;
+      border-radius: $border-radius;
+      margin-bottom: 10px;
+    }
+
+    .card-body {
+      padding: 0;
+    }
+  }
+
+  .custom-checkbox.custom-control,
+  .custom-radio.custom-control {
+    padding-left: 30px;
+  }
+
+  .custom-control-label::before {
+    border: 0;
+  }
+
+  label {
+    color: $sidebar;
+  }
+
+  [class*='collapse-'] .card .card-body {
+    padding-left: 10px;
+  }
+}
+
+// Checkbox tree
+.checkbox-tree-container {
+  width: 100%;
+
+  &.container {
+    &__all {
+      .collapse,
+      .collapsing,
+      .show {
+        .checkbox-tree-container {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background: $secondary;
+    border-radius: $border-radius;
+    margin-bottom: 10px;
+
+    label,
+    .custom-control-Primary {
+      color: $sidebar;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input[type='radio']:checked ~ .custom-control-label {
+      &::before {
+        border-color: $primary;
+        background-color: $primary;
+      }
+    }
+  }
+
+  .collapse,
+  .collapsing,
+  .show {
+    .checkbox-tree-container {
+      padding-left: 20px;
+    }
+
+    .header {
+      justify-content: start;
+      background: transparent;
+      margin-bottom: 0;
+      padding: 6px 10px;
+
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Drop down menu at alert page
+.modal-dialog {
+  &__alert {
+    min-width: 660px;
+  }
+}
+
+// Fix Tooltip flickering
+.tooltip {
+  pointer-events: none;
+}
+
+// Time picker
+.alert-time-picker {
+  &--dark {
+    div {
+      input,
+      button {
+        color: $text-body;
+      }
+    }
+  }
+}
+
+//back-button
+.back-button {
+  img {
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 16px;
+    color: $sidebarColor;
+    font-weight: normal;
+  }
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.floating-nav {
+  width: calc(100vw - (100vw - 100%) - 4.4rem - 13px) !important;
+}
+
+@include media-breakpoint-down(md) {
+  .header-navbar .navbar-container ul.navbar-nav li a.dropdown-user-link .user-status {
+    margin-top: 6px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .header-navbar.floating-nav {
+    width: calc(100vw - (100vw - 100%)) !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+//card
+.card {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: none;
+}
+
+.dark-layout {
+  .card {
+    background-color: $theme-dark-card-bg;
+  }
+
+  .header-navbar {
+    background-color: $headerbarDark;
+  }
+
+  .nav-toggle {
+    background: transparent;
+  }
+}
+
+body.dark-layout {
+  background-color: $body-bg-dark;
+}
+
+//menu
+.main-menu.menu-light .navigation > li ul .open > a,
+.main-menu.menu-light .navigation > li ul .sidebar-group-active > a {
+  color: $sidebarColor;
+}
+
+.dark-layout {
+  .main-menu {
+    background-color: $sidebarDark;
+  }
+
+  .main-menu.menu-dark .navigation > li.active {
+    background-color: $sidebarBgActiveDark;
+  }
+
+  .main-menu.menu-dark .navigation > li.active > a {
+    color: $sidebarTextActiveDark;
+  }
+
+  .main-menu.menu-dark .navigation li a {
+    border-bottom: dashed 1px #486077;
+    color: $sidebarTextDark;
+  }
+
+  .main-menu.menu-dark .navigation > li ul .open > a,
+  .main-menu.menu-dark .navigation > li ul .sidebar-group-active > a {
+    color: $sidebarTextDark;
+  }
+}
+
+//vertical-menu-modern
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a {
+  padding: 30px 0 30px 15px;
+  margin: 0 10px;
+}
+
+.w-col-lg-2 {
+  flex: 0 0 20.66667%;
+  max-width: 20.66667%;
+  //for tablet
+  @include media-breakpoint-down(md) {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  //for mobile
+  @include media-breakpoint-down(xs) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+//menu
+.main-menu .main-menu-content {
+  height: calc(100% - 120px) !important;
+}
+
+//nav
+.nav-pills .nav-link.active {
+  box-shadow: none;
+  background-color: transparent;
+  border: 2px solid $primary;
+  border-radius: $border-radius;
+  font-weight: 600;
+  font-size: 16px;
+  color: $primary;
+}
+
+.nav-pills .nav-link {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: $border-color;
+  height: 40px;
+  margin: 0 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+//btn-group  underline-group
+.underline-group {
+  button {
+    border: none !important;
+    border-bottom: solid 1px $border-color !important;
+    border-radius: 0 !important;
+    color: $sidebarColor !important;
+  }
+
+  .active {
+    border-bottom: solid 2px $primary !important;
+    background-color: transparent !important;
+    color: $primary !important;
+  }
+}
+
+//btn-group day-week-month
+.borderline-group {
+  button {
+    color: $border-color !important;
+    font-weight: 500 !important;
+    margin-right: 15px;
+    border: 1px solid $sidebarColor !important;
+    border-radius: $border-radius !important;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .active {
+    border: solid 2px $primary !important;
+    background-color: transparent !important;
+    color: $primary !important;
+    font-weight: 600 !important;
+  }
+}
+
+//nav-toggle
+.nav-toggle {
+  width: 30px;
+  height: 70px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//footer
+footer.footer {
+  font-size: 12px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  width: calc(100% - 275px);
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}
+
+.footer-absolute {
+  bottom: 0;
+  position: absolute;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
+  width: calc(100% - #{$menu-collapsed-width});
+}
+
+// Calculate height of padding of page
+.vertical-layout {
+  .content.app-content {
+    min-height: auto;
+    padding: calc(1.875rem + 65px) 1.875rem 0;
+  }
+}
+
+.custom-switch .custom-control-label::before {
+  background-color: $secondary;
+}
+
+.custom-switch .custom-control-label:after {
+  box-shadow: none;
+}
+
+.scroll-to-top {
+  .btn {
+    height: 37px;
+  }
+}
+
+// custom button
+.btn {
+  height: 40px;
+  border-radius: $border-radius;
+  padding: 0 25px;
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  //for tablet
+  @include media-breakpoint-down(md) {
+    padding: 0 15px;
+  }
+  //for mobile
+  @include media-breakpoint-down(xs) {
+    padding: 0 15px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+.dataTable-filter,
+.dataTable-select,
+.select__control,
+.form-control {
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  background: none;
+  padding: 0 10px 0 15px;
+  height: 40px;
+  font-size: 14px;
+
+  &::placeholder {
+    color: $placeholder-form;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &:focus {
+    background: transparent;
+  }
+}
+
+// Custom breadcrumb
+.custom-breadcrumb {
+  .breadcrumb {
+    .breadcrumb-item:first-child {
+      cursor: not-allowed;
+    }
+
+    .breadcrumb-item:not(:first-child) {
+      &::before {
+        background-image: none;
+        margin-right: 0;
+        content: '/';
+      }
+    }
+  }
+}
+
+//custom modal
+.modal {
+  width: calc(100% - 3.4rem);
+  padding: 1rem;
+}
+
+.modal-content {
+  border-radius: $border-radius;
+
+  .modal-header {
+    background-color: transparent;
+    border-bottom: solid 1px $border-modal;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+
+    .modal-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $sidebar;
+      margin-bottom: 0;
+    }
+
+    .close {
+      box-shadow: none;
+      margin: 0;
+      border-radius: 0;
+      background-image: url('src/assets/images/svg/modal/ic-close.svg');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 5px;
+      color: $body-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .form-control,
+    .input-group-append {
+      // Fix autofill change background and text color
+      /* Change the white to any color */
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 40px $white inset !important;
+      }
+
+      /*Change text in autofill textbox*/
+      &:-webkit-autofill {
+        -webkit-text-fill-color: $body-color;
+        caret-color: $body-color;
+      }
+    }
+
+    input,
+    .form-control {
+      min-height: 40px;
+      height: auto;
+      border: none;
+      border-bottom: solid 1px $border-color;
+      padding: 0;
+      border-radius: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: $body-color;
+
+      &::placeholder,
+      .select__placeholder {
+        color: rgba($body-color, 0.3);
+      }
+
+      div[class*='-Input'] {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .css-qj08tm-indicatorContainer {
+      color: $sidebarColor;
+      padding: 0;
+      //background-image: url('src/assets/images/svg/modal/arrow-down.svg');
+      //background-repeat: no-repeat;
+      //background-size: 13px 6px;
+      svg {
+        path {
+          //display: none;
+        }
+      }
+    }
+
+    .input-group-append,
+    .input-group-prepend,
+    .input-group-text {
+      border-radius: 0;
+      border: 0;
+      border-bottom: solid 1px $border-color;
+      height: 40px;
+      padding: 0;
+    }
+
+    .el-date-editor {
+      &.form-control {
+        .el-input {
+          width: 100%;
+
+          &__inner {
+            border: none !important;
+            background-color: $white !important;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 30px;
+  }
+
+  .css-47z9mc-multiValue {
+    background-color: $primary;
+  }
+
+  .modal-footer {
+    justify-content: center;
+    border-top: 0;
+    padding: 0 0 30px 0;
+  }
+}
+
+//form-group
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    margin-bottom: 5px;
+    color: $body-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  input,
+  .form-control {
+    min-height: 40px;
+    height: auto;
+    border: none;
+    border-bottom: solid 1px $border-color;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $body-color;
+
+    &::placeholder,
+    .select__placeholder {
+      color: rgba($body-color, 0.3);
+    }
+  }
+
+  .react-select {
+    .select__control {
+      min-height: 30px;
+      height: auto;
+      border: none;
+      border-bottom: solid 1px $border-color;
+      padding: 0;
+      border-radius: 0;
+      font-weight: 400;
+      color: $body-color;
+
+      .select__value-container {
+        padding: 0;
+        height: 100%;
+
+        div[class*='-Input'] {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .select__indicators {
+        .select__indicator {
+          padding: 0;
+        }
+      }
+    }
+
+    .select__menu {
+      z-index: 3;
+    }
+  }
+
+  .input-group-append,
+  .input-group-prepend,
+  .input-group-text {
+    border-radius: 0;
+    border: 0;
+    border-bottom: solid 1px $border-color;
+    height: 40px;
+    padding: 0;
+  }
+
+  // Fix autofill in dark mode
+  .form-control,
+  .input-group-append {
+    // Fix autofill change background and text color
+    /* Change the white to any color */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 40px $card-bg inset !important;
+      -webkit-border-radius: 0 !important;
+      height: 38px !important;
+    }
+
+    /*Change text in autofill textbox*/
+    &:-webkit-autofill {
+      -webkit-text-fill-color: $body-color;
+      caret-color: $body-color;
+    }
+  }
+}
+
+//add-user
+.add-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .edit-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background: url('src/assets/images/svg/modal/ic-camera.svg') no-repeat center;
+  }
+
+  span {
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  .reset-avatar {
+    height: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+}
+
+//custom checkbox
+.custom-control-input:checked {
+  border-color: $sidebar !important;
+  background-color: $sidebar !important;
+  border-radius: 2px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url('src/assets/images/svg/modal/ic-check.svg');
+}
+
+.avatar img {
+  object-fit: cover;
+}
+
+//nav-tabs
+.nav-tabs {
+  .nav-item {
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .nav-link {
+    height: 40px;
+    border: solid 1px $border-color;
+    color: $border-color;
+    border-radius: $border-radius;
+    font-size: 14px;
+    padding: 0 20px;
+
+    &:hover,
+    &:focus {
+      border-color: $sidebarBorderColor;
+    }
+
+    &.active {
+      border: solid 2px $primary;
+      color: $primary;
+    }
+
+    &:after {
+      background: transparent !important;
+      //background: linear-gradient(30deg, #0394ff, rgba(3, 148, 255, 0.5)) !important;
+    }
+  }
+}
+
+.bg-project {
+  background: $card-bg;
+  border-radius: $border-radius;
+  padding: 1.5rem !important;
+  margin: 0;
+
+  .card {
+    background: transparent;
+  }
+
+  .system-alert-setting {
+    .card {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .form-group {
+    label {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    input,
+    .form-control,
+    .input-group {
+      border: solid 1px $border-color;
+      padding: 0 15px;
+      border-radius: $border-radius;
+      height: 40px;
+      font-size: 13px;
+
+      &::placeholder {
+        color: rgba($border-color, 0.3);
+      }
+    }
+
+    .input-group {
+      input,
+      .input-group-append,
+      .input-group-text {
+        border: 0;
+        padding: 0;
+        background: transparent;
+      }
+    }
+  }
+
+  .react-select--project {
+    .select__control {
+      &:hover {
+        border-color: $border-color;
+      }
+
+      .select__value-container {
+        padding: 0;
+        height: 100%;
+
+        div:nth-child(2) {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .select__indicator {
+        color: $sidebarColor;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid $border-color;
+  }
+
+  .status {
+    border-radius: 20px;
+    height: 35px;
+    cursor: auto;
+    border-width: 2px !important;
+    margin-top: 2px;
+
+    &.btn-outline-muted {
+      border-color: $border-color;
+    }
+
+    &.btn-outline-success {
+      border-color: $success;
+    }
+
+    &.btn-outline-warning {
+      border-color: $warning;
+    }
+
+    &.btn-outline-danger {
+      border-color: $danger;
+    }
+  }
+}
+
+.add-button {
+  width: 40px;
+  padding: 0;
+}
+
+// react-select
+.line-select {
+  .select {
+    &__menu {
+      z-index: 10;
+    }
+  }
+
+  .select__control {
+    .select__indicators {
+      .select__indicator {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .header-navbar .navbar-container ul.navbar-nav li a.dropdown-user-link .user-name {
+    color: $primary;
+  }
+
+  .modal-content {
+    .modal-header {
+      border-bottom: solid 1px $theme-dark-border-color;
+
+      .modal-title {
+        color: $theme-dark-body-color;
+      }
+
+      .close {
+        background-image: url('src/assets/images/svg/modal/ic-close-dark.svg');
+      }
+    }
+
+    .form-group {
+      label {
+        color: $theme-dark-body-color;
+      }
+
+      .form-control,
+      .input-group-append {
+        // Fix autofill change background and text color
+        /* Change the white to any color */
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 40px $dark-2 inset !important;
+        }
+
+        /*Change text in autofill textbox*/
+        &:-webkit-autofill {
+          -webkit-text-fill-color: $theme-dark-body-color;
+          caret-color: $theme-dark-body-color;
+        }
+      }
+
+      input,
+      .select__control,
+      .form-control,
+      .react-select__control {
+        border-bottom: solid 1px $theme-dark-border-color;
+        color: $theme-dark-body-color;
+
+        &::placeholder,
+        .select__placeholder {
+          color: rgba($body-color, 0.3);
+        }
+
+        // Fix autofill change background and text color
+        /* Change the white to any color */
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 40px $dark-2 inset !important;
+        }
+
+        /*Change text in autofill textbox*/
+        &:-webkit-autofill {
+          -webkit-text-fill-color: $theme-dark-body-color;
+          caret-color: $theme-dark-body-color;
+        }
+      }
+
+      .css-qj08tm-indicatorContainer {
+        color: $sidebarColor;
+        padding: 0;
+      }
+
+      .input-group-append,
+      .input-group-prepend,
+      .input-group-text {
+        border-bottom: solid 1px $theme-dark-border-color;
+      }
+
+      .el-date-editor {
+        &.form-control {
+          .el-input {
+            &__inner {
+              background-color: $dark-2 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .css-47z9mc-multiValue {
+      background-color: $primary;
+    }
+  }
+
+  // Report filter
+  .report-filter {
+    .card {
+      .card-header {
+        background: $dark-3;
+      }
+    }
+
+    label {
+      color: $text-dark-level2;
+    }
+  }
+
+  //custom checkbox
+  .custom-checkbox {
+    .custom-control-input {
+      &:checked {
+        border-color: $primary;
+        background-color: $primary;
+      }
+    }
+
+    .custom-control-label {
+      &::before {
+        border-color: $primary;
+        background-color: $primary;
+      }
+
+      &::after {
+        border: 1px solid $sidebarTextDark;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  // Checkbox tree
+  .checkbox-tree-container {
+    &.container {
+      &__all {
+        .header {
+          background: $dark-3;
+        }
+      }
+    }
+
+    .header {
+      background: $dark-3;
+
+      label,
+      .custom-control-Primary {
+        color: $theme-dark-body-color;
+      }
+    }
+
+    .collapse,
+    .collapsing {
+      .header {
+        background: transparent;
+      }
+    }
+  }
+
+  // Custom breadcrumb
+  .custom-breadcrumb {
+    .breadcrumb {
+      .breadcrumb-item:not(:first-child) {
+        &::before {
+          background-image: none;
+          margin-right: 0;
+          content: '/';
+        }
+      }
+    }
+  }
+
+  // Fix autofill in dark mode
+  .form-group {
+    .form-control,
+    .input-group-append {
+      // Fix autofill change background and text color
+      /* Change the white to any color */
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 40px $dark-2 inset;
+        -webkit-border-radius: 0;
+        height: 38px;
+      }
+
+      /*Change text in autofill textbox*/
+      &:-webkit-autofill {
+        -webkit-text-fill-color: $theme-dark-body-color;
+        caret-color: $theme-dark-body-color;
+      }
+    }
+  }
+
+  // secondary button
+  .btn.btn-secondary {
+    background-color: $dark-secondary !important;
+    color: $secondary !important;
+    border-color: $dark-secondary !important;
+  }
+
+  // project overview
+  .bg-project {
+    background: $theme-dark-card-bg;
+
+    .system-alert-setting {
+      .card {
+        background: $dark-4;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $dark-mute-text;
+    }
+
+    .react-select--project {
+      .select__control {
+        border-color: $dark-mute-text;
+
+        &:hover {
+          border-color: $border-color;
+        }
+      }
+    }
+  }
+
+  input {
+    // Fix autofill change background and text color
+    /* Change the white to any color */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 40px $dark-2 inset !important;
+    }
+
+    /*Change text in autofill textbox*/
+    &:-webkit-autofill {
+      -webkit-text-fill-color: $theme-dark-body-color;
+      caret-color: $theme-dark-body-color;
+    }
+  }
+}
+
+.typo-section {
+  color: $sub-text-level2;
+  text-transform: uppercase;
+}
+
+.general-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.general-tab {
+  text-transform: none !important;
+  font-size: 1rem !important;
+  outline: none !important;
+}
+.tabs-border-bottom {
+  border-bottom: 1px solid $text-sub;
+}
+.add-contact-button {
+  background-color: #026894 !important;
+  border: 0;
+  border-radius: 3px;
+}
+
+.custom-icon-input-date::-webkit-calendar-picker-indicator {
+  background-image: url('@src/assets/images/svg/carlendar.svg');
+  font-size: 20px;
+}
+.file-attachment-label {
+  color: #026894;
+  font-size: 14px;
+  // cursor: default !important;
+}
+.file-attachment-label-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default !important;
+}
+.divider-dashed {
+  width: 100%;
+  border-bottom: 1px dashed $text-level2;
+}
+.divider-vertical {
+  height: auto;
+  border-right: 1px dashed $text-level2;
+}
+
+.billing-form {
+  input,
+  .select__single-value,
+  .multiple-value-container {
+    color: $dark-2 !important;
+  }
+  .select__control:hover {
+    border-color: $border-color;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  }
+  .select__indicator {
+    color: #7897b4 !important;
+  }
+
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: transparent;
+    color: #7897b4 !important;
+  }
+  .select--is-disabled,
+  .select__single-value--is-disabled {
+    color: #7897b4 !important;
+    .multiple-value-container {
+      color: #7897b4 !important;
+    }
+  }
+  .custom-input-flatpickr[readonly] {
+    color: #292d39 !important;
+  }
+}
+
+.custom-bagde {
+  cursor: default !important;
+}
+.custom-breadcrumb {
+  cursor: default !important;
+}
+.input-date-range {
+  background-image: url('@src/assets/images/svg/carlendar.svg');
+  font-size: 1px !important;
+  z-index: -1 !important;
+}
+.no-boder {
+  border: none !important;
+}
+
+.borderCustom {
+  height: 40px;
+  border: 1px solid #98aabb;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.input-group-merge {
+  &:focus-within .borderCustom {
+    border-color: #0394ff;
+  }
+  &:hover {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+.el-date-editor {
+  &.el-date-editor--daterange {
+    &.el-input {
+      width: 100%;
+      background-color: 'transparent';
+    }
+  }
+}
+.el-input__inner {
+  background-color: transparent !important;
+}
+
+.custom-checked-input {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,1008 @@
+// Dashboard breadcrumb
+.content-header-title {
+  &--overview {
+    border-right: none !important;
+  }
+}
+
+// Dashboard total table
+.table-responsive {
+  .table-hover-animation {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    thead {
+      flex: 0 0 auto;
+      text-transform: uppercase;
+    }
+
+    tbody {
+      height: 200px;
+      flex: 1 1 auto;
+      display: block;
+      overflow-y: auto;
+    }
+
+    tr {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+    }
+  }
+}
+
+.total-installed-capacity {
+  height: 505px;
+}
+
+// Dashboard breadcrumbs
+.breadcrumb {
+  .breadcrumb-item {
+    cursor: pointer;
+  }
+
+  .active {
+    cursor: not-allowed;
+  }
+}
+
+// Active and inactive circle icon
+.active-circle {
+  background-image: linear-gradient(243.07deg, #FF9D33 0%, #F86F19 100%);
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+.inactive-circle {
+  background-image: linear-gradient(243.07deg, #CECCCB 0%, #504F4E 100%);
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+// Custom colors
+.color-ree-purple {
+  color: $ree-purple;
+}
+
+.bg-ree-purple {
+  background-color: rgba($ree-purple, 0.1);
+}
+
+// Custom avatar size
+.avatar-24 {
+  @include avatarSize(24px)
+}
+
+.avatar-32 {
+  @include avatarSize(32px)
+}
+
+.avatar-48 {
+  @include avatarSize(48px)
+}
+
+// Total yield card
+.total-yield-card {
+  label {
+    color: $theme-dark-label;
+  }
+
+  .card-title {
+    margin-bottom: 5px !important;
+  }
+
+  .card-text {
+    margin-bottom: 5px !important;
+  }
+
+  .apexcharts-datalabels-group {
+  }
+
+  .apexcharts-canvas {
+    .apexcharts-pie {
+      .apexcharts-datalabel-label {
+        font-size: 12px;
+        transform: translate(0, 8px); /* Standard syntax */
+      }
+    }
+  }
+
+  .apexcharts-canvas {
+    .apexcharts-pie {
+      .apexcharts-datalabel-value {
+        font-size: 16px;
+        font-weight: 600;
+        transform: translate(0, -8px); /* Standard syntax */
+      }
+    }
+  }
+
+}
+
+//gauge-card
+.gauge-card {
+  height: calc(100% - 1.25rem);
+  margin-bottom: 0;
+  //min-height: 400px;
+  position: relative;
+  background: transparent !important;
+  // Power gauge
+  .power-gauge {
+    position: absolute;
+    z-index: 1;
+    top: 7%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+  }
+
+  .speedometer {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 50%;
+    margin: -90px -115px;
+  }
+
+  .weather {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-top: -6px;
+    }
+
+    .text-primary {
+      font-style: italic;
+      font-size: 11px;
+    }
+
+    h6 {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .temperature {
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+    }
+
+    .col {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: auto !important;
+      max-width: fit-content !important;
+    }
+
+    .sunrise {
+      margin-left: 38px;
+
+      .text-capitalize {
+        font-size: 10px;
+      }
+
+      .ml-1 {
+        margin-left: 5px !important;
+      }
+    }
+  }
+}
+
+//maintenance
+.maintenance {
+  min-height: 140px;
+}
+
+//list-card
+.devices-status-container {
+  .list-card {
+    height: 100%;
+
+    .card-header {
+      padding: 0 !important;
+
+      .card-title {
+        background: $sidebar;
+        border-radius: 3px 0px 0px 0px;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 14px;
+        color: white;
+        padding: 10px 20px;
+        margin-bottom: 0 !important;
+      }
+
+      .card-subtitle {
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 14px;
+        color: $sidebar;
+        margin-bottom: 0 !important;
+        padding: 0 15px;
+        margin-top: 0 !important;
+      }
+    }
+
+    &__meter {
+      height: calc(16vh);
+    }
+
+    &__inverter {
+      height: calc(22vh);
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+      }
+    }
+
+    .card-body {
+      overflow-y: auto;
+
+      .header-table {
+        position: sticky;
+        top: 0;
+        background: $card-bg;
+        z-index: 1;
+        border-bottom: 1px solid $sidebarBorderColor;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: $sidebar;
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        text-align: center;
+
+        .row {
+          width: 100%;
+
+          [class*='col-'] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .MuiTypography-root {
+        svg {
+          width: 25px;
+        }
+      }
+    }
+
+    a {
+      font-weight: $font-weight-normal !important;
+    }
+
+    .row-table {
+      border-bottom: 1px dashed $border-color;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.real-time {
+  height: calc(100% - 1.25rem);
+
+  label {
+    font-size: 14px;
+    color: $body-color;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    font-weight: $font-weight-medium;
+    margin-top: 10px;
+  }
+
+  .card-text {
+    font-size: 16px !important;
+    font-weight: $font-weight-normal;
+  }
+}
+
+//project-overview
+.project-overview {
+  min-width: 1200px;
+
+  .card-title {
+    margin-bottom: 20px !important;
+  }
+
+  label {
+    color: $ree-black;
+    font-weight: $font-weight-light;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 12.33333%;
+    max-width: 12.33333%;
+  }
+
+  .params-column {
+    width: 100%;
+    background: $card-bg-level2;
+    margin-bottom: 0;
+    height: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+
+    .param-item {
+      flex-grow: 1;
+      flex-basis: 0;
+      border-bottom: 1px solid $secondary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0;
+      justify-content: center;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+
+      .value {
+        span {
+          &:first-of-type {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          &:last-of-type {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: $border-color;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark-green;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .sub-value {
+        color: $primary;
+      }
+    }
+  }
+
+  .progress-circle {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: transparent;
+
+    .circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      .inside {
+        width: 228px;
+        height: 228px;
+        border-radius: 100%;
+        background-color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        .value {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 24px;
+          text-align: center;
+          margin-top: -50px;
+        }
+      }
+    }
+
+    .number {
+      height: 130px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 30px;
+      text-align: center;
+
+      .left, .center, .right {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: $border-color;
+        margin-top: 10px;
+      }
+
+      .center {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    min-width: inherit;
+    .col-lg-1 {
+      flex: inherit;
+      max-width: inherit;
+    }
+    .col-md-8 {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+    .col-md-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .params-column {
+      height: 300px;
+      max-height: 300px;
+      margin-top: 15px !important;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    min-width: inherit;
+    .col-lg-1 {
+      flex: inherit;
+      max-width: inherit;
+    }
+
+    .col-sm-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .params-column {
+      height: inherit;
+      max-height: inherit;
+      margin-top: 15px !important;
+    }
+  }
+}
+
+.dark-layout {
+  label {
+    color: $theme-dark-label !important;
+  }
+}
+
+.tree {
+  .card-body {
+    padding: 20px !important;
+  }
+
+  .row {
+    margin-top: 20px;
+  }
+
+  h6 {
+    font-size: 14px !important;
+    font-weight: $font-weight-normal;
+  }
+
+  .card-text {
+    font-size: 22px !important;
+    font-weight: $font-weight-medium;
+  }
+}
+
+// Leaflet map
+.leaflet-map {
+  height: 450px;
+  z-index: 1;
+  border-radius: 6px;
+
+  &__find-my-location {
+    position: absolute;
+    z-index: 400; // < 400 don't display
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+  }
+}
+
+// Power card
+.power-card {
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flat-picker {
+    width: auto;
+
+    &.flatpickr-input {
+      min-width: 250px;
+    }
+  }
+
+  .el-date-editor {
+    .el-input {
+      width: auto;
+      min-width: 220px;
+
+      &__inner {
+        text-align: center;
+      }
+    }
+  }
+
+  .large-width {
+    min-width: 1600px;
+    overflow-x: auto;
+  }
+}
+
+//custom-calendar
+.el-input__inner {
+  background-color: $card-bg !important;
+  border-radius: $border-radius !important;;
+  border: 1px solid $border-color !important;;
+  height: 40px !important;
+  padding: 0 15px !important;
+  text-align: left !important;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  color: $border-color !important;
+  //for tablet
+  @include media-breakpoint-down(md) {
+  }
+  //for mobile
+  @include media-breakpoint-down(xs) {
+    height: 40px !important;
+  }
+}
+
+.el-date-editor {
+  &.el-date-editor--daterange {
+    &.el-input {
+      width: 230px;
+    }
+  }
+
+  .el-icon-date {
+    background-image: url("@src/assets/images/svg/table/ic-calendar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48%;
+
+    @include media-breakpoint-down(xs) {
+      background-size: 46%;
+    }
+  }
+
+  .el-input__icon {
+    width: 50px;
+    @include media-breakpoint-down(xs) {
+      width: 40px;
+    }
+  }
+
+  .el-icon-date:before {
+    display: none;
+  }
+}
+
+// Custom dropdown breadcrumb
+.breadcrumb-dropdown {
+  &__icon {
+    padding: 0;
+    color: $primary !important;
+    border: none !important;
+    background-color: transparent !important;
+    margin-right: 5px;
+  }
+}
+
+// Modal solar panel list
+.modal-panel-list, .modal-project-detail {
+  max-width: 80%;
+}
+
+// Custom button on google map
+.custom-map-control-button {
+  margin-right: 10px;
+}
+
+//Hoa custom
+.large-width {
+  min-width: 1600px;
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, #206D8F, #2C9874);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.capacity-factor {
+  background: $secondary !important;
+  padding: 30px 10px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  //margin-right: 15px;
+
+  .row {
+    width: 100%;
+
+    .left {
+      padding-right: 10px;
+      border-right: 1px solid $border-color;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 160px;
+
+      .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(259.32deg, #02F79C -1.16%, #03AEF6 86.14%);
+
+        span {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 38px;
+          color: white;
+          margin-top: 10px;
+
+          &:last-of-type {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba($white, 0.6);
+            margin-top: 6px;
+          }
+        }
+      }
+
+      .text-capacity {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: $dark-green;
+        margin-top: 20px;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 20px;
+
+      .today {
+        text-align: center;
+
+        span:first-of-type {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 22px;
+        }
+
+        span:last-of-type {
+          font-weight: 400;
+          font-size: 16px;
+          color: $body-color;
+          margin-left: 10px;
+        }
+      }
+
+      .text-today {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: $dark-green;
+        margin: 15px 0 30px 0;
+      }
+
+      .yesterday {
+        height: 40px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(white, 0.6);
+        border-radius: $border-radius;
+        text-align: center;
+
+        span {
+          &:first-of-type, &:last-of-type {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: $dark-green;
+          }
+
+          &:nth-of-type(2) {
+            font-size: 18px;
+            line-height: 18px;
+            color: $sidebar;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-revenue, .card-info {
+  width: 100%;
+  height: 120px;
+  //margin-right: 15px;
+  background: rgba(white, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .value {
+    span {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    label {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #8AACCB;
+      background-image: none !important;
+    }
+  }
+
+  .sub-value {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: $sidebar;
+    margin: 15px 0 10px 0;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark-green;
+    text-align: center;
+  }
+}
+
+.card-info {
+  height: 60px;
+  flex-direction: row;
+
+  .title {
+    margin-left: 10px;
+  }
+}
+
+.power-irr-chart-card {
+  .react-echarts {
+    &--dashboard {
+      height: calc(100vh - 415px) !important;
+    }
+  }
+}
+
+.custom-google-map {
+  height: calc(100vh - 175px);
+  border-radius: $border-radius;
+}
+
+.dashboard-nav-item {
+  padding: 5px;
+
+  &.active {
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .text-gradient {
+    color: $dark-linear;
+    background: none;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: $dark-linear;
+  }
+
+  .capacity-factor {
+    background: $dark-3 !important;
+
+    .row {
+      .left {
+        .circle {
+          background: $dark-linear;
+
+          span {
+            color: $text-body;
+
+            &:last-of-type {
+              color: rgba($text-body, 0.6);
+            }
+          }
+        }
+
+        .text-capacity {
+          color: $white;
+        }
+      }
+
+      .right {
+        .today {
+          span:last-of-type {
+            color: $text-body;
+          }
+        }
+
+        .text-today {
+          color: $text-body;
+        }
+
+        .yesterday {
+          background: $dark-4;
+
+          span {
+            &:first-of-type, &:last-of-type {
+              color: $dark-text-yesterday;
+            }
+
+            &:nth-of-type(2) {
+              font-size: 18px;
+              line-height: 18px;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-revenue, .card-info {
+    background: rgba($white, 0.4);
+
+    .value {
+      label {
+        color: $theme-dark-body-color;
+        background-image: none !important;
+      }
+    }
+
+    .sub-value {
+      color: $dark-mute-text;
+    }
+
+    .title {
+      color: $theme-dark-body-color;
+    }
+  }
+
+  //list-card
+  .devices-status-container {
+    .list-card {
+      .card-header {
+        .card-title {
+          background: $dark-3;
+        }
+
+        .card-subtitle {
+          color: $sidebarTextActiveDark;
+        }
+      }
+
+      .card-body {
+        .header-table {
+          background-color: $dark-2;
+          border-bottom: 1px solid $dark-body;
+          color: $sidebarTextActiveDark;
+        }
+      }
+
+      .row-table {
+        border-bottom: 1px dashed $dark-body;
+      }
+    }
+  }
+
+  //project-overview
+  .project-overview {
+    label {
+      color: $theme-dark-body-color;
+    }
+
+    .params-column {
+      background: $dark-4;
+
+      .param-item {
+        border-bottom: 1px solid $theme-dark-border-color;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        .value {
+          span {
+            &:last-of-type {
+              color: $dark-mute-text;
+            }
+          }
+        }
+
+        .title {
+          color: $theme-dark-body-color;
+        }
+
+        .sub-value {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

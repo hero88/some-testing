@@ -1,0 +1,271 @@
+{
+  "40230": [
+    {
+      "bit": "0",
+      "description": "Grid voltage too low",
+      "measures": "Check voltage and AC installation. If the voltage is zero, check the fuses",
+      "status": ""
+    },
+    {
+      "bit": "1",
+      "description": "Grid voltage too low",
+      "measures": "Check voltage and AC installation. If the voltage is zero, check the fuses",
+      "status": ""
+    },
+    {
+      "bit": "2",
+      "description": "Grid voltage average too high for ten minutes",
+      "measures": "Check that the installation is correct in accordance with the installation manual. If so, request a new grid code file with increased voltage limit or reactive power for voltage suppression",
+      "status": ""
+    },
+    {
+      "bit": "3",
+      "description": "Grid voltage too high",
+      "measures": "Check voltage and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "4",
+      "description": "Grid voltage too high",
+      "measures": "Check voltage and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "5",
+      "description": "The inverter has detected a voltage peak on the grid",
+      "measures": "Check voltage and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "6",
+      "description": "The inverter has detected a voltage peak on the grid",
+      "measures": "Check voltage and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "7",
+      "description": "Grid frequency too low or too high",
+      "measures": "Check power frequency",
+      "status": ""
+    },
+    {
+      "bit": "8",
+      "description": "Grid frequency change exceeded",
+      "measures": "Check deviation of the grid frequency",
+      "status": ""
+    },
+    {
+      "bit": "9",
+      "description": "Grid frequency too low or too high",
+      "measures": "Check grid frequency and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "10",
+      "description": "DC current share in utility grid is too high",
+      "measures": "For repeated daily occurrences, perform onsite grid analysis",
+      "status": ""
+    },
+    {
+      "bit": "11",
+      "description": "DC current share in utility grid is too high",
+      "measures": "For repeated daily occurrences, perform onsite grid analysis",
+      "status": ""
+    },
+    {
+      "bit": "12",
+      "description": "The residual-current monitoring unit (RCMU) detected an overcurrent",
+      "measures": "Turn off both DC and AC supply and wait until the display turns off. Then turn on DC and AC supply and observe if the event reoccurs. Visual inspection of all PV cables and modules",
+      "status": ""
+    },
+    {
+      "bit": "13",
+      "description": "The residual-current monitoring unit (RCMU) detected an overcurrent",
+      "measures": "Turn off both DC and AC supply and wait until the display turns off. Then turn on DC and AC supply and observe if the event reoccurs. Visual inspection of all PV cables and modules",
+      "status": ""
+    },
+    {
+      "bit": "14",
+      "description": "The utility grid has been outside the permissible range for more than ten minutes (frequency and/or voltage)",
+      "measures": "Check grid frequency, grid voltage, software version and grid code setting",
+      "status": ""
+    },
+    {
+      "bit": "15",
+      "description": "Grid failure, open phase detected",
+      "measures": "If the event reoccurs several times each day, contact the responsible grid operator",
+      "status": ""
+    },
+    {
+      "bit": "16",
+      "description": "Grid failure",
+      "measures": "If the event reoccurs several times each day, contact the responsible grid operator",
+      "status": ""
+    },
+    {
+      "bit": "25",
+      "description": "Fan speed is too low",
+      "measures": "Check whether the inverter fan is - blocked",
+      "status": "warning"
+    },
+    {
+      "bit": "26",
+      "description": "DC voltage warning",
+      "measures": "Make sure that PV system and - layout correspond to recommendations in the manuals",
+      "status": "warning"
+    }
+  ],
+  "40232": [
+    {
+      "bit": "0",
+      "description": "Failure in memory/EEPROM",
+      "measures": "Restart the inverter. If the event - persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "1",
+      "description": "Internal communications fault",
+      "measures": "Restart the inverter. If the event - persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "2",
+      "description": "Measurement circuit test failed",
+      "measures": "If the event persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "3",
+      "description": "Grid code settings invalid",
+      "measures": "Restart the inverter. If the event persists, ask Service to generate a new grid code file or reselect a standard grid code",
+      "status": ""
+    },
+    {
+      "bit": "4",
+      "description": "PV input current is negative. Sensor fault",
+      "measures": "Check the polarity of the PV system. If polarity is correct, contact Service"
+    },
+    {
+      "bit": "5",
+      "description": "Residual-current monitoring unit (RCMU) 352 self-test failed",
+      "measures": "Contact the service",
+      "status": ""
+    }
+  ],
+  "40234": [
+    {
+      "bit": "0",
+      "description": "Too many PV modules connected in parallel. Should only appear on newly installed systems",
+      "measures": "Check number of strings in parallel - and current ratings. Has the current limit been exceeded? Reconnect strings in parallel",
+      "status": "PV current is too high/waiting"
+    },
+    {
+      "bit": "1",
+      "description": "The resistance between the PV strings and ground (PE) is too low for the inverter to be commissioned. This will force the inverter to make a new measurement after ten minutes",
+      "measures": "Make a visual inspection of all PV - cables and modules for correct installation according to the installation manual. The event could indicate that the PE connection is missing. Warning: A repeated occurrence of this message on several consecutive days indicates a general problem in the DC insulation. In this case, a comprehensive test of the insulation is necessary, since even a sudden ground fault during operation cannot be excluded. Warning: A ground fault during operation can completely destroy the device.",
+      "status": "PV ISO too 260 low"
+    }
+  ],
+  "40236": [
+    {
+      "bit": "0",
+      "description": "The internal temperature of the inverter is too high",
+      "measures": "Verify that no objects or dust are on - top of the inverter and make sure that the air ducts are clear and not blocked"
+    },
+    {
+      "bit": "1",
+      "description": "Voltage in DC link is too high",
+      "measures": "If the event persists, reset the - inverter by disconnecting DC and AC. If the event is repeated, check the maximum PV voltage using the display to see if it is above the limits"
+    },
+    {
+      "bit": "2",
+      "description": "The DC voltage is too high",
+      "measures": "Make sure that PV system and - layout correspond to recommendations in the manuals",
+      "status": "PV voltage too high/ waiting"
+    },
+    {
+      "bit": "3",
+      "description": "Current measured on AC side is too high",
+      "measures": "Contact the service",
+      "status": ""
+    },
+    {
+      "bit": "4",
+      "description": "Internal error. Voltage measured before and after the relay differs too much",
+      "measures": "Contact the service",
+      "status": ""
+    },
+    {
+      "bit": "5",
+      "description": "Current measured on AC side is too high",
+      "measures": "If the event repeats, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "6",
+      "description": "Internal error. Voltage measured before and after the relay differs too much",
+      "measures": "Contact the service",
+      "status": ""
+    },
+    {
+      "bit": "7",
+      "description": "Internal error",
+      "measures": "Restart the inverter. If the event - persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "8",
+      "description": "Temperature sensor error",
+      "measures": "If the event persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "9",
+      "description": "Self-test 24-hour timeout. Self-test must run at least once per 24 hours",
+      "measures": "None",
+      "status": ""
+    },
+    {
+      "bit": "10",
+      "description": "Too many RCMU events during the past 24 hours. Only four automatic reconnect attempts after event 34 is allowed during a 24-hour period. The inverter will automatically try to reconnect after a certain period",
+      "measures": "Wait up to 24 hours. If event 34 recurs, follow the action for event 34",
+      "status": ""
+    },
+    {
+      "bit": "11",
+      "description": "Gatedrive error",
+      "measures": "Restart the inverter. If the event persists, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "12",
+      "description": "Grid frequency too low or too high",
+      "measures": "Check grid frequency and AC installation",
+      "status": ""
+    },
+    {
+      "bit": "13",
+      "description": "Internal fan error. Maximum output power has been reduced",
+      "measures": "If the event repeats, contact Service",
+      "status": ""
+    },
+    {
+      "bit": "24",
+      "description": "The resistance between the PV strings and ground (PE) is too low for the inverter to be commissioned. This will force the inverter to make a new measurement after ten minutes",
+      "measures": "Make a visual inspection of all PV - cables and modules for correct installation according to the installation manual. The event could indicate that the PE connection is missing. Warning: A repeated occurrence of this message on several consecutive days indicates a general problem in the DC insulation. In this case, a comprehensive test of the insulation is necessary, since even a sudden ground fault during operation cannot be excluded. Warning: A ground fault during operation can completely destroy the device",
+      "status": "PV ISO too 260 low"
+    },
+    {
+      "bit": "25",
+      "description": "PV overvoltage protection device error. Inverter will continue operation without overvoltage protection",
+      "measures": "Replace PV overvoltage protection device. See SPD replacement instructions for details",
+      "status": ""
+    },
+    {
+      "bit": "26",
+      "description": "AC grid surge protection device error. Inverter will continue operation without surge protection device.",
+      "measures": "Replace AC grid surge protection device. See SPD replacement instructions for details",
+      "status": ""
+    }
+  ]
+}

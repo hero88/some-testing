@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2px" height="17px" viewBox="0 0 2 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vertical-line</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="single-line-update" transform="translate(-756.000000, -274.000000)" stroke="#00BCD4">
+            <line x1="764.735554" y1="282.5" x2="749.735554" y2="282.5" id="vertical-line" transform="translate(757.235554, 282.500000) rotate(90.000000) translate(-757.235554, -282.500000) "></line>
+        </g>
+    </g>
+</svg>

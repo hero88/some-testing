@@ -1,0 +1,50 @@
+.modal-dialog-filter {
+  .model-content {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+
+  .app-collapse {
+    border: none;
+    margin-bottom: 15px;
+
+    &.card {
+      border: none;
+
+      .card-header {
+        background: $secondary;
+        color: $sidebar;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 3px;
+        border: none;
+        padding: 10px !important;
+      }
+
+      .card-body {
+        padding: 10px 0 !important;
+        background: #fff;
+        color: $ree-black;
+
+        .custom-control {
+          .custom-control-label {
+            color: $ree-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark-layout {
+  .modal-dialog-filter {
+    .app-collapse {
+      &.card {
+        .card-body {
+          background: $dark-2;
+          color: $theme-dark-body-color;
+        }
+      }
+    }
+  }
+}

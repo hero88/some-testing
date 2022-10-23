@@ -1,0 +1,47 @@
+.sweet-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 27px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase !important;
+  color: #042b52;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  .swal2-title {
+    text-transform: uppercase !important;
+    font-size: 20px;
+    color: #042b52;
+  }
+  padding: 1.125rem;
+}
+.sweet-container {
+}
+
+.sweet-popup {
+  padding: 0;
+  width: 645px;
+  height: 275px;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.sweet-actions {
+  padding-bottom: 2.5rem;
+}
+
+.sweet-content {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
